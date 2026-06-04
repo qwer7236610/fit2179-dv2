@@ -6,7 +6,8 @@ A single-page data story comparing **home care** and **residential aged care** a
 Australia, from the major cities to the most remote communities. The headline finding:
 distance from a capital changes the *form* of aged care, not *whether* it reaches people.
 
-**Live page:** https://qwer7236610.github.io/fit-2179-DATA-VIS-II/
+**Live page:** [https://qwer7236610.github.io/fit-2179-DATA-VIS-II/](https://qwer7236610.github.io/fit2179-dv2/)
+
 
 ## Repository structure
 
