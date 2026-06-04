@@ -32,8 +32,8 @@
     background:var(--paper);
     color:var(--ink);
     font-family:"Newsreader", Georgia, "Times New Roman", serif;
-    font-size:1.18rem;
-    line-height:1.72;
+    font-size:1.07rem;
+    line-height:1.66;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
   }
@@ -42,7 +42,7 @@
   /* ---------- masthead ---------- */
   .mast{
     text-align:center;
-    padding:5.5rem 0 2.4rem;
+    padding:3rem 0 2rem;
     border-bottom:1px solid var(--rule);
     animation:rise .8s ease both;
   }
@@ -53,8 +53,8 @@
   h1{
     font-family:"Fraunces", Georgia, serif;
     font-weight:600;
-    font-size:clamp(2.5rem,6vw,4rem);
-    line-height:1.04;
+    font-size:clamp(2.1rem,5vw,3.1rem);
+    line-height:1.06;
     letter-spacing:-.015em;
     margin:0 0 .9rem;
   }
@@ -70,7 +70,7 @@
   }
 
   /* ---------- sections ---------- */
-  section{padding:4.6rem 0 1.2rem;}
+  section{padding:2.9rem 0 1rem;}
   .kicker{
     font-family:"Fraunces", Georgia, serif;
     font-size:.82rem;letter-spacing:.24em;text-transform:uppercase;
@@ -81,16 +81,16 @@
   h2{
     font-family:"Fraunces", Georgia, serif;
     font-weight:600;
-    font-size:clamp(1.7rem,3.6vw,2.5rem);
-    line-height:1.1;letter-spacing:-.01em;
-    margin:0 0 1.6rem;max-width:20ch;
+    font-size:clamp(1.45rem,3vw,2rem);
+    line-height:1.12;letter-spacing:-.01em;
+    margin:0 0 1.2rem;max-width:20ch;
   }
   .prose p{max-width:var(--measure);margin:0 0 1.3rem;}
   .prose p:last-child{margin-bottom:0;}
-  .lead{font-size:1.28rem;line-height:1.6;}
+  .lead{font-size:1.14rem;line-height:1.6;}
   .lead::first-letter{
     font-family:"Fraunces",Georgia,serif;
-    font-weight:600;font-size:3.4em;float:left;line-height:.78;
+    font-weight:600;font-size:3em;float:left;line-height:.78;
     padding:.06em .12em 0 0;color:var(--accent);
   }
   .closing{
@@ -100,12 +100,19 @@
   }
 
   /* ---------- figure grid ---------- */
-  .fig-row{display:flex;flex-wrap:wrap;align-items:center;margin:2.2rem -16px;}
+  .fig-row{display:flex;flex-wrap:wrap;align-items:center;margin:1.5rem -16px;}
   .fig-row.top{align-items:flex-start;}
-  .cell{box-sizing:border-box;padding:1rem 16px;}
+  .cell{box-sizing:border-box;padding:.5rem 16px;}
   figure{margin:0;}
   .chart{width:100%;}
   .chart svg{display:block;margin:0 auto;}
+  /* text sitting beside a chart: nudge it down so it lines up with the
+     chart's plotting area rather than floating at the very top pixel */
+  .fig-row.top .cell.prose{padding-top:.9rem;}
+  .fig-row.top .cell.prose p:first-child{margin-top:0;}
+  /* the donut and the two maps look stranded at their small natural size,
+     so let these three grow to fill their column; other charts stay capped */
+  #fig1 svg, #fig2 svg, #fig10 svg{max-width:none !important;}
   figcaption{
     font-size:.78rem;color:var(--ink-soft);margin-top:.55rem;
     letter-spacing:.02em;
@@ -169,7 +176,7 @@
       <p>That reputation rests on more than lifestyle. Australia runs a national, government-subsidised aged care system that offers support to older residents wherever they live, in the major cities and in towns far inland alike.</p>
     </div>
 
-    <div class="fig-row top">
+    <div class="fig-row">
       <div class="cell pure-u-1 pure-u-lg-2-5">
         <figure>
           <div class="chart" id="fig1"></div>
@@ -196,7 +203,7 @@
     <p class="kicker">Part Two</p>
     <h2>A cliff that isn't what it looks like</h2>
 
-    <div class="fig-row">
+    <div class="fig-row top">
       <div class="cell pure-u-1 pure-u-lg-1-2">
         <figure>
           <div class="chart" id="fig3"></div>
@@ -209,7 +216,7 @@
       </div>
     </div>
 
-    <div class="fig-row">
+    <div class="fig-row top">
       <div class="cell pure-u-1 pure-u-lg-1-2">
         <figure>
           <div class="chart" id="fig4"></div>
@@ -221,7 +228,7 @@
       </div>
     </div>
 
-    <div class="fig-row">
+    <div class="fig-row top">
       <div class="cell pure-u-1 pure-u-lg-1-2">
         <figure>
           <div class="chart" id="fig5"></div>
@@ -247,7 +254,7 @@
       <p class="lead">If the last picture corrected a misconception, this one fills in what is actually true. Across Australia, where you live shapes not whether you receive care, but how.</p>
     </div>
 
-    <div class="fig-row top">
+    <div class="fig-row">
       <div class="cell pure-u-1 pure-u-lg-3-5">
         <figure>
           <div class="chart" id="fig6"></div>
