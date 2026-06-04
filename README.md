@@ -27,3 +27,9 @@ Generative AI (Claude) was used to help interpret the data, refine the choice an
 of the charts, write and refine the Vega-Lite specifications, and draft and edit the
 narrative text. See the "About this visualisation" section on the page for the full
 acknowledgement.
+
+## Sketches
+
+![Sketch 1](sketch1.jpg)
+![Sketch 2](sketch2.jpg)
+![Sketch 3](sketch3.jpg)
