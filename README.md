@@ -9,16 +9,6 @@ distance from a capital changes the *form* of aged care, not *whether* it reache
 **Live page:** [https://qwer7236610.github.io/fit-2179-DATA-VIS-II/](https://qwer7236610.github.io/fit2179-dv2/)
 
 
-## Repository structure
-
-```
-index.html        The visualisation (open this / GitHub Pages serves it)
-specs/            Vega-Lite v5 JSON for every chart and map (human-readable)
-data/            Source data used by the charts
-```
-
-Each diagram and map is a Vega-Lite v5 specification in `specs/`, embedded in
-`index.html` with `vega-embed`. The maps use a Mercator projection over SA3 boundaries.
 
 ## Data
 
