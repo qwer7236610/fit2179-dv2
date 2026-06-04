@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Two Paths to Later Life in Australia — comparing home care and residential care across the country, using AIHW and ABS data.">
+<title>Two Paths to Later Life in Australia</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper:#faf7f1;
+    --paper-2:#f3eee3;
+    --ink:#262420;
+    --ink-soft:#5d574d;
+    --rule:#e2dccd;
+    --accent:#6d28c9;      /* deep purple — matches the home-care ramp */
+    --home:#ae6af5;
+    --resid:#fde850;
+    --maxw:1080px;
+    --measure:66ch;
+  }
+  *{box-sizing:border-box;}
+  html,body{overflow-x:hidden;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader", Georgia, "Times New Roman", serif;
+    font-size:1.18rem;
+    line-height:1.72;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  /* ---------- masthead ---------- */
+  .mast{
+    text-align:center;
+    padding:5.5rem 0 2.4rem;
+    border-bottom:1px solid var(--rule);
+    animation:rise .8s ease both;
+  }
+  .mast .eyebrow{
+    font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--accent);font-weight:500;margin:0 0 1.4rem;
+  }
+  h1{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:clamp(2.5rem,6vw,4rem);
+    line-height:1.04;
+    letter-spacing:-.015em;
+    margin:0 0 .9rem;
+  }
+  .mast .sub{
+    font-style:italic;color:var(--ink-soft);
+    font-size:clamp(1.1rem,2.4vw,1.35rem);
+    max-width:34ch;margin:0 auto 1.6rem;line-height:1.4;
+  }
+  .mast .dek{font-size:1rem;color:var(--ink-soft);margin:0 0 1.6rem;}
+  .byline{
+    font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- sections ---------- */
+  section{padding:4.6rem 0 1.2rem;}
+  .kicker{
+    font-family:"Fraunces", Georgia, serif;
+    font-size:.82rem;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--accent);font-weight:500;margin:0 0 .5rem;
+    display:flex;align-items:center;gap:.8rem;
+  }
+  .kicker::after{content:"";height:1px;flex:1;background:var(--rule);}
+  h2{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:clamp(1.7rem,3.6vw,2.5rem);
+    line-height:1.1;letter-spacing:-.01em;
+    margin:0 0 1.6rem;max-width:20ch;
+  }
+  .prose p{max-width:var(--measure);margin:0 0 1.3rem;}
+  .prose p:last-child{margin-bottom:0;}
+  .lead{font-size:1.28rem;line-height:1.6;}
+  .lead::first-letter{
+    font-family:"Fraunces",Georgia,serif;
+    font-weight:600;font-size:3.4em;float:left;line-height:.78;
+    padding:.06em .12em 0 0;color:var(--accent);
+  }
+  .closing{
+    font-family:"Fraunces",Georgia,serif;
+    font-size:1.3rem;line-height:1.45;color:var(--ink);
+    max-width:30ch;margin:2rem auto 0;text-align:center;font-weight:400;
+  }
+
+  /* ---------- figure grid ---------- */
+  .fig-row{display:flex;flex-wrap:wrap;align-items:center;margin:2.2rem -16px;}
+  .fig-row.top{align-items:flex-start;}
+  .cell{box-sizing:border-box;padding:1rem 16px;}
+  figure{margin:0;}
+  .chart{width:100%;}
+  .chart svg{display:block;margin:0 auto;}
+  figcaption{
+    font-size:.78rem;color:var(--ink-soft);margin-top:.55rem;
+    letter-spacing:.02em;
+  }
+  .chart-err{font-size:.9rem;color:#9a3b3b;font-style:italic;padding:1rem 0;}
+  .stack > figure + figure{margin-top:2rem;}
+
+  /* ---------- about / notes ---------- */
+  .about{
+    margin-top:4rem;padding:3rem 0 4.5rem;
+    border-top:1px solid var(--rule);
+    background:var(--paper-2);
+  }
+  .about h2{font-size:1.45rem;margin-bottom:1.4rem;}
+  .about{font-size:.98rem;line-height:1.62;color:var(--ink-soft);}
+  .about h3{
+    font-family:"Newsreader",serif;font-size:1rem;font-weight:500;
+    color:var(--ink);margin:1.6rem 0 .5rem;
+    letter-spacing:.01em;
+  }
+  .about p{max-width:78ch;margin:.4rem 0;}
+  .about ul{max-width:78ch;margin:.4rem 0;padding-left:1.1rem;}
+  .about li{margin:.35rem 0;}
+  .about a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule);word-break:break-word;}
+  .about a:hover{border-color:var(--accent);}
+  .about .meta{margin-top:1.8rem;font-size:.92rem;color:var(--ink);}
+
+  @keyframes rise{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+
+  @media (max-width:1023px){
+    .closing{max-width:36ch;}
+  }
+  @media (max-width:567px){
+    body{font-size:1.08rem;}
+    .wrap{padding:0 18px;}
+    .mast{padding:3.5rem 0 2rem;}
+  }
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <p class="eyebrow">Aged care in Australia</p>
+    <h1>Two Paths to Later Life in Australia</h1>
+    <p class="sub">Where you grow old in Australia shapes how you are cared for, not whether.</p>
+    <p class="dek">Comparing home care and residential care across the country.</p>
+    <p class="byline">Mingqi He · May 2026</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ===================== PART ONE ===================== -->
+  <section>
+    <p class="kicker">Part One</p>
+    <h2>A country that takes ageing seriously</h2>
+
+    <div class="prose">
+      <p class="lead">Australia consistently ranks among the world's most liveable countries, known for its coastlines, its climate, and its quality of life. For many, it is a place people imagine growing old in.</p>
+      <p>That reputation rests on more than lifestyle. Australia runs a national, government-subsidised aged care system that offers support to older residents wherever they live, in the major cities and in towns far inland alike.</p>
+    </div>
+
+    <div class="fig-row top">
+      <div class="cell pure-u-1 pure-u-lg-2-5">
+        <figure>
+          <div class="chart" id="fig1"></div>
+          <figcaption>Aged-care users by pathway, 2024–25. Source: AIHW GEN.</figcaption>
+        </figure>
+      </div>
+      <div class="cell pure-u-1 pure-u-lg-3-5">
+        <figure>
+          <div class="chart" id="fig2"></div>
+          <figcaption>People aged 65 and over by SA3. Source: ABS, 2024.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>Today, 4.7 million Australians are aged 65 and over. They are not spread evenly across the continent. The older population clusters along the coasts and around the major cities and thins out across the vast inland, broadly tracing where Australians live in general.</p>
+      <p>For those who need formal care, there are two main pathways. Home support helps people stay in their own homes; residential care provides around-the-clock support in a facility. In 2024–25, around 834,000 people received home support and around 204,000 were living in residential care. The two counts measure care in different ways and are not meant to be added together, but each marks one of the principal ways the country looks after its older population.</p>
+      <p>Most older Australians use neither, relying instead on family, community, or their own independence. For those who do turn to formal care, the system is broad, and it reaches further than many expect.</p>
+    </div>
+  </section>
+
+  <!-- ===================== PART TWO ===================== -->
+  <section>
+    <p class="kicker">Part Two</p>
+    <h2>A cliff that isn't what it looks like</h2>
+
+    <div class="fig-row">
+      <div class="cell pure-u-1 pure-u-lg-1-2">
+        <figure>
+          <div class="chart" id="fig3"></div>
+          <figcaption>Residential care as a share of aged-care users, by remoteness. Source: AIHW GEN.</figcaption>
+        </figure>
+      </div>
+      <div class="cell pure-u-1 pure-u-lg-1-2 prose">
+        <p>Look at how residential care is distributed across the country, and something appears alarming. In the major cities, around one in five aged care users lives in a residential facility. Travel to the most remote areas and that share falls to fewer than one in twenty-five — a steep, almost vertical drop.</p>
+        <p>It looks like a system failing its most remote communities. The numbers say otherwise.</p>
+      </div>
+    </div>
+
+    <div class="fig-row">
+      <div class="cell pure-u-1 pure-u-lg-1-2">
+        <figure>
+          <div class="chart" id="fig4"></div>
+          <figcaption>Care used per 100 people aged 65+, metro vs non-metro. Source: AIHW ÷ ABS, by SA3.</figcaption>
+        </figure>
+      </div>
+      <div class="cell pure-u-1 pure-u-lg-1-2 prose">
+        <p>When residential care use is measured per person aged 65 and over — and regions are compared as though they shared the same mix of ages, so that an older area and a younger one can be set side by side fairly — the gap between city and country all but disappears. Their per-person rates of residential care come out close to identical. The cliff was never about access. It was about proportion: remote communities do not have less residential care for their size, they simply lean more heavily on home support.</p>
+      </div>
+    </div>
+
+    <div class="fig-row">
+      <div class="cell pure-u-1 pure-u-lg-1-2">
+        <figure>
+          <div class="chart" id="fig5"></div>
+          <figcaption>Share of the 65+ population aged 85 and over, across SA3 areas. Source: ABS, 2024.</figcaption>
+        </figure>
+      </div>
+      <div class="cell pure-u-1 pure-u-lg-1-2 prose">
+        <p>Regions do differ in how old their older populations are; some carry a noticeably larger share of residents aged 85 and over than others. That is worth knowing in its own right, but it is not what produces the cliff. The cliff comes down to a single fact — outside the cities, more care is delivered at home. Older Australians in regional and remote areas are not being left behind. They are being looked after differently.</p>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>The picture that emerges is not one of inequality. It is one of two systems running in parallel, each shaped by the communities it serves.</p>
+    </div>
+  </section>
+
+  <!-- ===================== PART THREE ===================== -->
+  <section>
+    <p class="kicker">Part Three</p>
+    <h2>Two ways to grow old</h2>
+
+    <div class="prose">
+      <p class="lead">If the last picture corrected a misconception, this one fills in what is actually true. Across Australia, where you live shapes not whether you receive care, but how.</p>
+    </div>
+
+    <div class="fig-row top">
+      <div class="cell pure-u-1 pure-u-lg-3-5">
+        <figure>
+          <div class="chart" id="fig6"></div>
+          <figcaption>Home vs residential share of aged-care users; each square = 1%. Source: AIHW GEN.</figcaption>
+        </figure>
+      </div>
+      <div class="cell pure-u-1 pure-u-lg-2-5">
+        <figure>
+          <div class="chart" id="fig7"></div>
+          <figcaption>Care used per 100 people aged 65+, a city area vs a remote one. Source: AIHW ÷ ABS, by SA3.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>In the major cities, aged care tends to layer. Home support forms the foundation, and residential care sits alongside it as a substantial second option. In the most remote areas, home support is almost the whole picture. Nearly all aged care in the outback is delivered at home — not because residential facilities are unavailable everywhere, but because home-based care is how these communities age. It is close to what researchers and policymakers call ageing in place: growing old in familiar surroundings, near community and country.</p>
+      <p>This is not a story of one region having more and another having less. Set two communities at opposite ends of the spectrum side by side — Unley, an inner suburb of Adelaide, and the Eyre Peninsula in rural South Australia — and the contrast is not in how much care exists; it is in the form that care takes. The city resident is more likely to move into a facility in time. The remote resident is more likely to be supported at home, for longer.</p>
+    </div>
+
+    <p class="closing">Neither path is a compromise. The form changes with geography. The commitment does not.</p>
+  </section>
+
+  <!-- ===================== PART FOUR ===================== -->
+  <section>
+    <p class="kicker">Part Four</p>
+    <h2>A path exists, wherever you are</h2>
+
+    <div class="prose">
+      <p class="lead">Zoom out across the whole country and the picture that emerges is one of reach.</p>
+    </div>
+
+    <div class="fig-row top">
+      <div class="cell pure-u-1 pure-u-lg-1-2">
+        <figure>
+          <div class="chart" id="fig10"></div>
+          <figcaption>Home care users per 100 people aged 65+, by SA3. Source: AIHW ÷ ABS, by SA3.</figcaption>
+        </figure>
+      </div>
+      <div class="cell pure-u-1 pure-u-lg-1-2 stack">
+        <figure>
+          <div class="chart" id="fig9"></div>
+          <figcaption>Home vs residential share of aged-care users, by remoteness. Source: AIHW GEN.</figcaption>
+        </figure>
+        <figure>
+          <div class="chart" id="fig11"></div>
+          <figcaption>Aged-care coverage across 340 communities. Source: AIHW GEN &amp; ABS, by SA3.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>Home care is not concentrated in a handful of regions. It is spread broadly, running heaviest in the places that depend on it most. From the coastal cities to the inland towns, the map of home support follows the map of where older Australians live — the same shape we started with.</p>
+      <p>The residential side tells a similar story. Nearly every community in the country, 336 out of 340, has access to at least one form of formal aged care. The four that do not are remote island territories and a single area with fewer than five residents aged 65 and over. There is no meaningful part of Australia where aged care simply is not there.</p>
+      <p>What changes from place to place is not whether care exists, but the balance between its two forms. Lay the regions out side by side and the shift is smooth: as you move from the cities toward the most remote areas, the residential share narrows and home support widens to take its place, the two always adding up to the whole. Cities offer both pathways in depth; remote communities rely almost entirely on home care.</p>
+    </div>
+
+    <p class="closing">For 4.7 million Australians aged 65 and over, the question was never really whether care would be there. It was what growing old, in this country, would look like.</p>
+  </section>
+</main>
+
+<!-- ===================== ABOUT / NOTES ===================== -->
+<footer class="about">
+  <div class="wrap">
+    <h2>About this visualisation</h2>
+
+    <h3>Data sources</h3>
+    <p>This visualisation combines two open datasets, both published under a Creative Commons Attribution (CC BY) licence:</p>
+    <ul>
+      <li>Aged care service use — Australian Institute of Health and Welfare (AIHW), GEN “People using aged care by region” data tables, 2024–25.
+        <a href="https://www.gen-agedcaredata.gov.au/resources/access-data/2026/february/gen-data-people-using-aged-care-by-region" target="_blank" rel="noopener">gen-agedcaredata.gov.au</a></li>
+      <li>Population — Australian Bureau of Statistics (ABS), Regional population by age and sex, 2024.
+        <a href="https://www.abs.gov.au/statistics/people/population/regional-population-age-and-sex/latest-release" target="_blank" rel="noopener">abs.gov.au</a></li>
+    </ul>
+
+    <h3>How the two sources are combined</h3>
+    <p>The per-person (per-capita) rates shown throughout — for example, residential and home care use per 100 people aged 65 and over — are derived by joining the AIHW aged care counts to the ABS population estimates at the SA3 geographic level (Statistical Area Level 3). AIHW supplies the number of people receiving care; ABS supplies the older population those numbers are measured against. The charts that show only a home-versus-residential split (the waffle charts and the stacked bar) use the AIHW figures on their own.</p>
+
+    <h3>A few notes on reading the numbers</h3>
+    <ul>
+      <li><em>Home support and residential care are counted differently.</em> The home support figure counts people who received support at some point during 2024–25 (a flow over the year), while the residential figure counts people living in care at a single point in time (a snapshot). The two are not directly comparable and should not be added together or read as one combined share of the population; a person may appear in both over the course of a year.</li>
+      <li><em>Small populations make some rates unstable.</em> In areas with very few residents aged 65 and over, a per-person rate can swing widely on the strength of only a handful of people. Rates for these areas are best read as rough indications rather than precise values.</li>
+      <li><em>Proportion is not the same as rate.</em> Some charts show the proportion of aged care within an area that is home versus residential; others show how much care is used per person. A high home proportion means that, of the care delivered locally, most of it is home-based — it does not by itself mean more care is delivered per person.</li>
+    </ul>
+
+    <h3>Use of AI</h3>
+    <p>I acknowledge the use of Claude (Anthropic, <a href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a>) in producing this visualisation. It was used to help interpret and check the cleaned data (for example, testing whether the city–country difference reflects the mix of care rather than a gap in access, and flagging areas whose small older populations make their rates unreliable); to discuss and refine the choice of chart types, including the decision to show the metropolitan-versus-remote comparison as paired waffle charts after an earlier map version proved hard to read; to help write and refine the Vega-Lite specifications behind the charts and maps; and to draft and edit this narrative text and check its grammar and style. I chose the topic, obtained and prepared the AIHW and ABS source data, made the final decisions on every chart and on the page layout, and reviewed all figures against the underlying data.</p>
+
+    <p class="meta">The Vega-Lite (v5) JSON specification for every chart and map on this page is available in the <code>/specs</code> folder of the project repository.</p>
+    <p class="meta"><strong>Author:</strong> Mingqi He &nbsp;·&nbsp; <strong>Date:</strong> May 2026</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script>
+  const charts = [
+    {sel:"#fig1",  url:"specs/fig1_donut_vl.json"},
+    {sel:"#fig2",  url:"specs/fig2_pop_map_vl.json"},
+    {sel:"#fig3",  url:"specs/fig3_cliff_vl.json"},
+    {sel:"#fig4",  url:"specs/fig4_grouped_vl.json"},
+    {sel:"#fig5",  url:"specs/fig5_age_hist_vl.json"},
+    {sel:"#fig6",  url:"specs/fig6_waffle_vl.json"},
+    {sel:"#fig7",  url:"specs/fig7_dumbbell_vl.json"},
+    {sel:"#fig9",  url:"specs/fig9_stacked_vl.json"},
+    {sel:"#fig10", url:"specs/fig10_home_map_vl.json"},
+    {sel:"#fig11", url:"specs/fig11_coverage_vl.json"}
+  ];
+
+  // Make a rendered Vega SVG scale to its container while keeping aspect ratio,
+  // so nothing forces horizontal scrolling on small laptop screens.
+  function makeResponsive(sel){
+    const svg = document.querySelector(sel + " svg");
+    if(!svg) return;
+    const w = svg.getAttribute("width");
+    const h = svg.getAttribute("height");
+    if(w && h && !svg.getAttribute("viewBox")){
+      svg.setAttribute("viewBox", "0 0 " + w + " " + h);
+    }
+    svg.removeAttribute("width");
+    svg.removeAttribute("height");
+    svg.style.width = "100%";
+    svg.style.height = "auto";
+    if(w){ svg.style.maxWidth = w + "px"; }   // never upscale past natural size
+  }
+
+  const opts = {actions:false, renderer:"svg", tooltip:true};
+
+  (async function(){
+    for(const c of charts){
+      try{
+        await vegaEmbed(c.sel, c.url, opts);
+        makeResponsive(c.sel);
+      }catch(err){
+        console.error("Failed to load " + c.url, err);
+        const el = document.querySelector(c.sel);
+        if(el){ el.innerHTML = '<p class="chart-err">This chart could not be loaded.</p>'; }
+      }
+    }
+  })();
+</script>
+</body>
+</html>

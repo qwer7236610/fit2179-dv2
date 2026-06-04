@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Figure 4 - Grouped bar: home care vs residential care rate per 100 people aged 65+, metro vs non-metro.",
+  "title": {
+    "text": "Home care vs residential care rate, by region",
+    "anchor": "start",
+    "fontSize": 16
+  },
+  "width": 440,
+  "height": 340,
+  "data": {
+    "url": "data/figure4_metro.csv"
+  },
+  "transform": [
+    {
+      "fold": [
+        "home_per_100_65plus",
+        "resid_per_100_65plus"
+      ],
+      "as": [
+        "metric",
+        "rate"
+      ]
+    },
+    {
+      "calculate": "datum.metric == 'home_per_100_65plus' ? 'Home care' : 'Residential care'",
+      "as": "care_type"
+    },
+    {
+      "calculate": "datum.group == 'Metro (Greater)' ? 'Metro' : 'Non-metro'",
+      "as": "region"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "region",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Metro",
+        "Non-metro"
+      ],
+      "axis": {
+        "labelFontSize": 13,
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "rate",
+      "type": "quantitative",
+      "title": "Per 100 people aged 65+",
+      "scale": {
+        "domain": [
+          0,
+          21
+        ]
+      },
+      "axis": {
+        "values": [
+          0,
+          5,
+          10,
+          15,
+          20
+        ]
+      }
+    },
+    "xOffset": {
+      "field": "care_type",
+      "sort": [
+        "Home care",
+        "Residential care"
+      ]
+    },
+    "color": {
+      "field": "care_type",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "Home care",
+          "Residential care"
+        ],
+        "range": [
+          "#ae6af5",
+          "#fde850"
+        ]
+      },
+      "legend": {
+        "orient": "right",
+        "direction": "vertical",
+        "labelFontSize": 12
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "stroke": "#999",
+        "strokeWidth": 0.4,
+        "width": 28
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "field": "care_type",
+            "type": "nominal",
+            "title": "Care type"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "title": "Per 100 aged 65+",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -7,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "text": {
+          "field": "rate",
+          "type": "quantitative",
+          "format": ".2f"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Helvetica, Arial, sans-serif",
+    "axis": {
+      "grid": true,
+      "gridOpacity": 0.25
+    }
+  }
+}

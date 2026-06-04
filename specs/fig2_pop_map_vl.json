@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Figure 2 - Choropleth: Australia's 65+ population by SA3.",
+  "title": {
+    "text": "Distribution of Australia's 65+ Aged Population (2024)",
+    "anchor": "middle",
+    "fontSize": 18
+  },
+  "width": 720,
+  "height": 620,
+  "projection": {
+    "type": "mercator",
+    "center": [
+      134,
+      -28
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/SA3_2016_AUST.json",
+        "format": {
+          "type": "topojson",
+          "feature": "SA3_2016_AUST"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f2f2f2",
+        "stroke": "white",
+        "strokeWidth": 0.4
+      },
+      "encoding": {
+        "tooltip": {
+          "value": "No data"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/SA3_2016_AUST.json",
+        "format": {
+          "type": "topojson",
+          "feature": "SA3_2016_AUST"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.SA3_CODE16",
+          "from": {
+            "data": {
+              "url": "data/sa3_master.csv"
+            },
+            "key": "sa3_code",
+            "fields": [
+              "sa3_name",
+              "pop_65plus",
+              "residential_total"
+            ]
+          }
+        },
+        {
+          "filter": "isValid(datum.pop_65plus)"
+        },
+        {
+          "calculate": "datum.pop_65plus < 6000 ? '< 6k' : datum.pop_65plus < 10000 ? '6\\u201310k' : datum.pop_65plus < 14000 ? '10\\u201314k' : datum.pop_65plus < 21000 ? '14\\u201321k' : '21k+'",
+          "as": "pop_band"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 0.4
+      },
+      "encoding": {
+        "color": {
+          "field": "pop_band",
+          "type": "ordinal",
+          "title": [
+            "People aged 65+"
+          ],
+          "sort": [
+            "< 6k",
+            "6–10k",
+            "10–14k",
+            "14–21k",
+            "21k+"
+          ],
+          "scale": {
+            "domain": [
+              "< 6k",
+              "6–10k",
+              "10–14k",
+              "14–21k",
+              "21k+"
+            ],
+            "range": [
+              "#fff7ec",
+              "#fdbb84",
+              "#fc8d59",
+              "#e34a33",
+              "#b30000"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "symbolType": "square",
+            "symbolSize": 150,
+            "labelFontSize": 11,
+            "titleFontSize": 12,
+            "offset": 8,
+            "rowPadding": 3
+          }
+        },
+        "tooltip": [
+          {
+            "field": "sa3_name",
+            "type": "nominal",
+            "title": "Area"
+          },
+          {
+            "field": "residential_total",
+            "type": "quantitative",
+            "title": "Residential places",
+            "format": ","
+          },
+          {
+            "field": "pop_65plus",
+            "type": "quantitative",
+            "title": "Population 65+",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Helvetica, Arial, sans-serif"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Figure 3 - Residential care's share of aged care by remoteness (MMM); honest mid rebound; faint reference slope MM1->MM7.",
+  "title": {
+    "text": "Residential care's share of aged care collapses with remoteness",
+    "subtitle": "From left to right, the scale transitions from bustling capitals (Major Cities) to the deeply isolated outback (Very Remote).",
+    "anchor": "start",
+    "fontSize": 16,
+    "subtitleFontSize": 11,
+    "subtitleColor": "#777",
+    "subtitleFontStyle": "italic"
+  },
+  "width": 580,
+  "height": 340,
+  "data": {
+    "url": "data/mmm_aggregate.csv"
+  },
+  "transform": [
+    {
+      "calculate": "'MM' + datum.mmm",
+      "as": "mm"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "mm",
+      "type": "ordinal",
+      "sort": [
+        "MM1",
+        "MM2",
+        "MM3",
+        "MM4",
+        "MM5",
+        "MM6",
+        "MM7"
+      ],
+      "title": null,
+      "axis": {
+        "labelFontSize": 12,
+        "labelAngle": 0,
+        "labelExpr": "datum.label == 'MM1' ? ['MM1','metro'] : (datum.label == 'MM7' ? ['MM7','remote'] : datum.label)"
+      }
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "mm": "MM1",
+            "v": 21.7
+          },
+          {
+            "mm": "MM7",
+            "v": 3.93
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "color": "#e0e0e0",
+        "strokeWidth": 1.5,
+        "strokeDash": [
+          4,
+          3
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "mm",
+          "type": "ordinal",
+          "sort": [
+            "MM1",
+            "MM2",
+            "MM3",
+            "MM4",
+            "MM5",
+            "MM6",
+            "MM7"
+          ]
+        },
+        "y": {
+          "field": "v",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "area",
+        "line": {
+          "color": "#111111",
+          "strokeWidth": 2.5
+        },
+        "color": {
+          "x1": 1,
+          "y1": 1,
+          "x2": 1,
+          "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#ffffff"
+            },
+            {
+              "offset": 1,
+              "color": "#d9d9d9"
+            }
+          ]
+        }
+      },
+      "encoding": {
+        "y": {
+          "field": "resid_share_pct",
+          "type": "quantitative",
+          "title": "Residential share of aged-care users (%)",
+          "scale": {
+            "domain": [
+              0,
+              25
+            ]
+          },
+          "axis": {
+            "values": [
+              0,
+              5,
+              10,
+              15,
+              20,
+              25
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "mmm_label",
+            "type": "nominal",
+            "title": "Remoteness"
+          },
+          {
+            "field": "resid_share_pct",
+            "type": "quantitative",
+            "title": "Residential share (%)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "fill": "#111111",
+        "size": 65
+      },
+      "encoding": {
+        "y": {
+          "field": "resid_share_pct",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -12,
+        "fontSize": 11,
+        "fontWeight": "bold",
+        "color": "#111111"
+      },
+      "encoding": {
+        "y": {
+          "field": "resid_share_pct",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "resid_share_pct",
+          "type": "quantitative",
+          "format": ".1f"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "mm": "MM5",
+            "y": 3.6,
+            "t": "In the most remote outback, only ~4% of;aged-care users are in residential care —;the rest rely on home support"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "split(datum.t,';')",
+          "as": "tt"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 9,
+        "fontStyle": "italic",
+        "color": "#b30000",
+        "lineHeight": 11,
+        "baseline": "top"
+      },
+      "encoding": {
+        "x": {
+          "field": "mm",
+          "type": "ordinal",
+          "sort": [
+            "MM1",
+            "MM2",
+            "MM3",
+            "MM4",
+            "MM5",
+            "MM6",
+            "MM7"
+          ]
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "tt"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Helvetica, Arial, sans-serif",
+    "axis": {
+      "grid": false
+    }
+  }
+}

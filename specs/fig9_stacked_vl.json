@@ -1,0 +1,242 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Figure 9 - Horizontal 100% stacked bar: home vs residential share by remoteness.",
+  "title": {
+    "text": "How aged care is delivered, by remoteness",
+    "anchor": "start",
+    "fontSize": 16
+  },
+  "width": 540,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "mmm": 1,
+        "mmm_label": "Metropolitan areas",
+        "care_type": "Home support",
+        "share_pct": 78.3
+      },
+      {
+        "mmm": 1,
+        "mmm_label": "Metropolitan areas",
+        "care_type": "Residential",
+        "share_pct": 21.7
+      },
+      {
+        "mmm": 2,
+        "mmm_label": "Regional centres",
+        "care_type": "Home support",
+        "share_pct": 83.64
+      },
+      {
+        "mmm": 2,
+        "mmm_label": "Regional centres",
+        "care_type": "Residential",
+        "share_pct": 16.36
+      },
+      {
+        "mmm": 3,
+        "mmm_label": "Large rural towns",
+        "care_type": "Home support",
+        "share_pct": 80.42
+      },
+      {
+        "mmm": 3,
+        "mmm_label": "Large rural towns",
+        "care_type": "Residential",
+        "share_pct": 19.58
+      },
+      {
+        "mmm": 4,
+        "mmm_label": "Medium rural towns",
+        "care_type": "Home support",
+        "share_pct": 81.05
+      },
+      {
+        "mmm": 4,
+        "mmm_label": "Medium rural towns",
+        "care_type": "Residential",
+        "share_pct": 18.95
+      },
+      {
+        "mmm": 5,
+        "mmm_label": "Small rural towns",
+        "care_type": "Home support",
+        "share_pct": 88.43
+      },
+      {
+        "mmm": 5,
+        "mmm_label": "Small rural towns",
+        "care_type": "Residential",
+        "share_pct": 11.57
+      },
+      {
+        "mmm": 6,
+        "mmm_label": "Remote communities",
+        "care_type": "Home support",
+        "share_pct": 92.01
+      },
+      {
+        "mmm": 6,
+        "mmm_label": "Remote communities",
+        "care_type": "Residential",
+        "share_pct": 7.99
+      },
+      {
+        "mmm": 7,
+        "mmm_label": "Very remote communities",
+        "care_type": "Home support",
+        "share_pct": 96.07
+      },
+      {
+        "mmm": 7,
+        "mmm_label": "Very remote communities",
+        "care_type": "Residential",
+        "share_pct": 3.93
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "'MM'+datum.mmm",
+      "as": "mm"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "mm",
+      "type": "ordinal",
+      "sort": [
+        "MM1",
+        "MM2",
+        "MM3",
+        "MM4",
+        "MM5",
+        "MM6",
+        "MM7"
+      ],
+      "title": null,
+      "axis": {
+        "labelFontSize": 12,
+        "labelExpr": "datum.label=='MM1' ? ['MM1','(urban)'] : (datum.label=='MM7' ? ['MM7','(remote)'] : datum.label)"
+      }
+    },
+    "x": {
+      "field": "share_pct",
+      "type": "quantitative",
+      "stack": "normalize",
+      "title": null,
+      "axis": null
+    },
+    "color": {
+      "field": "care_type",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "Home support",
+          "Residential"
+        ],
+        "range": [
+          "#ae6af5",
+          "#fde850"
+        ]
+      },
+      "legend": {
+        "orient": "right",
+        "direction": "vertical",
+        "labelFontSize": 12,
+        "labelExpr": "datum.label=='Home support' ? 'Home care' : 'Residential care'"
+      }
+    },
+    "order": {
+      "field": "care_type",
+      "sort": "descending"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "stroke": "white",
+        "strokeWidth": 1,
+        "height": {
+          "band": 0.7
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.care_type=='Home support'"
+        },
+        {
+          "calculate": "round(datum.share_pct)+'%'",
+          "as": "lbl"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 10,
+        "color": "white",
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "datum": 0,
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "lbl",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "white"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.care_type=='Residential'"
+        },
+        {
+          "calculate": "round(datum.share_pct)+'%'",
+          "as": "lbl"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "dx": -6,
+        "fontSize": 10,
+        "color": "#5b4a00",
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "datum": 1,
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "lbl",
+          "type": "nominal"
+        },
+        "color": {
+          "value": "#5b4a00"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Helvetica, Arial, sans-serif",
+    "axis": {
+      "grid": false
+    }
+  }
+}

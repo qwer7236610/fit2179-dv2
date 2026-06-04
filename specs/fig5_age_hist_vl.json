@@ -1,0 +1,199 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Figure 5 - Grouped histogram: distribution of SA3 share of 65+ who are 85+, metro vs non-metro.",
+  "title": {
+    "text": "How old are the old? Share of 65+ who are 85+, by SA3",
+    "anchor": "start",
+    "fontSize": 15
+  },
+  "width": 540,
+  "height": 320,
+  "data": {
+    "url": "data/sa3_master.csv"
+  },
+  "transform": [
+    {
+      "filter": "isValid(datum.pct_85plus_of_65plus) && datum.pop_65plus >= 100"
+    },
+    {
+      "calculate": "datum.is_metro == true || datum.is_metro == 'True' ? 'Metro' : 'Non-metro'",
+      "as": "region"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "opacity": 0.8,
+        "stroke": "white",
+        "strokeWidth": 0.3
+      },
+      "encoding": {
+        "x": {
+          "field": "pct_85plus_of_65plus",
+          "type": "quantitative",
+          "bin": {
+            "step": 2,
+            "extent": [
+              0,
+              24
+            ]
+          },
+          "title": "How elderly are the locals?",
+          "axis": {
+            "values": [
+              0,
+              4,
+              8,
+              12,
+              16,
+              20,
+              24
+            ]
+          }
+        },
+        "y": {
+          "aggregate": "count",
+          "type": "quantitative",
+          "title": [
+            "Number of areas",
+            "(Total 339 areas in AU)"
+          ],
+          "axis": {
+            "values": [
+              0,
+              25,
+              50,
+              75,
+              100
+            ]
+          },
+          "scale": {
+            "domain": [
+              0,
+              105
+            ]
+          }
+        },
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Metro",
+              "Non-metro"
+            ],
+            "range": [
+              "#e72d48",
+              "#f4a0ad"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "direction": "vertical",
+            "labelFontSize": 12
+          }
+        },
+        "tooltip": [
+          {
+            "field": "region",
+            "type": "nominal",
+            "title": "Region"
+          },
+          {
+            "aggregate": "count",
+            "title": "SA3 areas"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 0.3,
+            "y": 70,
+            "t": "Youngest areas:;East Arnhem 1.6% (remote)"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "split(datum.t,';')",
+          "as": "tt"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "color": "#555",
+        "lineHeight": 12
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "tt"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 23.7,
+            "y": 70,
+            "t": "Oldest areas:;Moreland–North 23.2% (metro)"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "split(datum.t,';')",
+          "as": "tt"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "top",
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "color": "#555",
+        "lineHeight": 12
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "tt"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Helvetica, Arial, sans-serif",
+    "axis": {
+      "grid": false
+    }
+  }
+}

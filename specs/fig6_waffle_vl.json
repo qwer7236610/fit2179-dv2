@@ -1,0 +1,1499 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Figure 6 - Waffle charts: home care's share of aged care, metro vs very remote (GEN single source).",
+  "data": {
+    "values": [
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 0,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 1,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 2,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 3,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 4,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 5,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 6,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 7,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 8,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 9,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 0,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 1,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 2,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 3,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 4,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 5,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 6,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 7,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 8,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 9,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 0,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 1,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 2,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 3,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 4,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 5,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 6,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 7,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 8,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 9,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 0,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 1,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 2,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 3,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 4,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 5,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 6,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 7,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 8,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 9,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 0,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 1,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 2,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 3,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 4,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 5,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 6,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 7,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 8,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 9,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 0,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 1,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 2,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 3,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 4,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 5,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 6,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 7,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 8,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 9,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 0,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 1,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 2,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 3,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 4,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 5,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 6,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 7,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 8,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 9,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 0,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 1,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 2,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 3,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 4,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 5,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 6,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 7,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 8,
+        "row": 7,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 9,
+        "row": 7,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 0,
+        "row": 8,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 1,
+        "row": 8,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 2,
+        "row": 8,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 3,
+        "row": 8,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 4,
+        "row": 8,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 5,
+        "row": 8,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 6,
+        "row": 8,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 7,
+        "row": 8,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 8,
+        "row": 8,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 9,
+        "row": 8,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 0,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 1,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 2,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 3,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 4,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 5,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 6,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 7,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 8,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Major cities",
+        "label": "MM1 — Metropolitan areas",
+        "col": 9,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 0,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 1,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 2,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 3,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 4,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 5,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 6,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 7,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 8,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 9,
+        "row": 0,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 0,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 1,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 2,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 3,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 4,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 5,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 6,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 7,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 8,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 9,
+        "row": 1,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 0,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 1,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 2,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 3,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 4,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 5,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 6,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 7,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 8,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 9,
+        "row": 2,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 0,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 1,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 2,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 3,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 4,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 5,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 6,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 7,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 8,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 9,
+        "row": 3,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 0,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 1,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 2,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 3,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 4,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 5,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 6,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 7,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 8,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 9,
+        "row": 4,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 0,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 1,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 2,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 3,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 4,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 5,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 6,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 7,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 8,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 9,
+        "row": 5,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 0,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 1,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 2,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 3,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 4,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 5,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 6,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 7,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 8,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 9,
+        "row": 6,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 0,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 1,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 2,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 3,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 4,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 5,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 6,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 7,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 8,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 9,
+        "row": 7,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 0,
+        "row": 8,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 1,
+        "row": 8,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 2,
+        "row": 8,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 3,
+        "row": 8,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 4,
+        "row": 8,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 5,
+        "row": 8,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 6,
+        "row": 8,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 7,
+        "row": 8,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 8,
+        "row": 8,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 9,
+        "row": 8,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 0,
+        "row": 9,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 1,
+        "row": 9,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 2,
+        "row": 9,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 3,
+        "row": 9,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 4,
+        "row": 9,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 5,
+        "row": 9,
+        "care": "Home care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 6,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 7,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 8,
+        "row": 9,
+        "care": "Residential care"
+      },
+      {
+        "group": "Very remote",
+        "label": "MM7 — Very remote communities",
+        "col": 9,
+        "row": 9,
+        "care": "Residential care"
+      }
+    ]
+  },
+  "title": {
+    "text": "Where aged care happens: home vs residential",
+    "anchor": "middle",
+    "fontSize": 17,
+    "subtitle": "Each square = 1% of aged-care users in that area type",
+    "subtitleFontSize": 11,
+    "subtitleColor": "#777"
+  },
+  "columns": 2,
+  "spacing": 60,
+  "facet": {
+    "field": "group",
+    "type": "nominal",
+    "title": null,
+    "sort": [
+      "Major cities",
+      "Very remote"
+    ],
+    "header": {
+      "labelFontSize": 14,
+      "labelFontWeight": "bold",
+      "labelColor": "#333",
+      "labelAnchor": "start"
+    }
+  },
+  "spec": {
+    "width": 200,
+    "height": 200,
+    "mark": {
+      "type": "square",
+      "size": 260,
+      "cornerRadius": 3
+    },
+    "encoding": {
+      "x": {
+        "field": "col",
+        "type": "ordinal",
+        "axis": null,
+        "scale": {
+          "paddingInner": 0.12
+        }
+      },
+      "y": {
+        "field": "row",
+        "type": "ordinal",
+        "axis": null,
+        "sort": "descending",
+        "scale": {
+          "paddingInner": 0.12
+        }
+      },
+      "color": {
+        "field": "care",
+        "type": "nominal",
+        "title": null,
+        "scale": {
+          "domain": [
+            "Home care",
+            "Residential care"
+          ],
+          "range": [
+            "#ae6af5",
+            "#fde850"
+          ]
+        },
+        "legend": {
+          "orient": "bottom",
+          "direction": "horizontal",
+          "labelFontSize": 12
+        }
+      },
+      "tooltip": [
+        {
+          "field": "label",
+          "type": "nominal",
+          "title": "Area type"
+        },
+        {
+          "field": "care",
+          "type": "nominal",
+          "title": "Care type"
+        }
+      ]
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Helvetica, Arial, sans-serif"
+  }
+}

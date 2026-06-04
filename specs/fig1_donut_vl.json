@@ -1,0 +1,185 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Figure 1 - Donut: older Australians who use aged care, home vs residential.",
+  "title": {
+    "text": "Home Care & Residential Care",
+    "anchor": "middle",
+    "fontSize": 18,
+    "dy": -6
+  },
+  "width": 360,
+  "height": 360,
+  "data": {
+    "url": "data/national_totals.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.category == 'Home support (CHSP)' || datum.category == 'Residential care'"
+    },
+    {
+      "calculate": "datum.category == 'Home support (CHSP)' ? 'Home care' : 'Residential care'",
+      "as": "care_type"
+    },
+    {
+      "calculate": "datum.category == 'Home support (CHSP)' ? 0 : 1",
+      "as": "ord"
+    },
+    {
+      "calculate": "datum.category == 'Home support (CHSP)' ? '🏠' : '🏥'",
+      "as": "icon"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 95,
+        "outerRadius": 150,
+        "stroke": "white",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "theta": {
+          "field": "count",
+          "type": "quantitative",
+          "stack": true
+        },
+        "order": {
+          "field": "ord",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "care_type",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": [
+              "Home care",
+              "Residential care"
+            ],
+            "range": [
+              "#ae6af5",
+              "#fde850"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "direction": "vertical",
+            "labelFontSize": 12
+          }
+        },
+        "tooltip": [
+          {
+            "field": "care_type",
+            "type": "nominal",
+            "title": "Care type"
+          },
+          {
+            "field": "count",
+            "type": "quantitative",
+            "title": "People aged 65+",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 122,
+        "fontSize": 30
+      },
+      "encoding": {
+        "theta": {
+          "field": "count",
+          "type": "quantitative",
+          "stack": true
+        },
+        "order": {
+          "field": "ord",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "icon"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 175,
+        "fontSize": 14,
+        "fontWeight": "bold",
+        "color": "#333"
+      },
+      "encoding": {
+        "theta": {
+          "field": "count",
+          "type": "quantitative",
+          "stack": true
+        },
+        "order": {
+          "field": "ord",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "count",
+          "type": "quantitative",
+          "format": ","
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "t": "1M"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 46,
+        "fontWeight": "bold",
+        "color": "#333",
+        "dy": -8
+      },
+      "encoding": {
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "t": "date: 2024–25"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "color": "#888",
+        "dy": 28
+      },
+      "encoding": {
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ],
+  "view": {
+    "stroke": null
+  },
+  "config": {
+    "style": {
+      "cell": {
+        "stroke": "transparent"
+      }
+    },
+    "font": "Helvetica, Arial, sans-serif"
+  }
+}

@@ -1,0 +1,2493 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Figure 11 - Dot strip: aged-care coverage across 340 SA3 communities (pre-computed jitter).",
+  "title": {
+    "text": "Almost every community has aged care",
+    "anchor": "start",
+    "fontSize": 16
+  },
+  "width": 580,
+  "height": 300,
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "sa3_name": "Queanbeyan",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9399.0,
+            "jx": 0.3745401188473625,
+            "jy": 0.49161587511683236
+          },
+          {
+            "sa3_name": "Snowy Mountains",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4432.0,
+            "jx": 0.9507143064099162,
+            "jy": 0.4734717707805657
+          },
+          {
+            "sa3_name": "South Coast",
+            "coverage": "Both home & residential",
+            "pop_65plus": 25219.0,
+            "jx": 0.7319939418114051,
+            "jy": 0.17320186991001518
+          },
+          {
+            "sa3_name": "Goulburn - Mulwaree",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8766.0,
+            "jx": 0.5986584841970366,
+            "jy": 0.43385164923797304
+          },
+          {
+            "sa3_name": "Young - Yass",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8351.0,
+            "jx": 0.15601864044243652,
+            "jy": 0.39850473439737344
+          },
+          {
+            "sa3_name": "Gosford",
+            "coverage": "Both home & residential",
+            "pop_65plus": 42508.0,
+            "jx": 0.15599452033620265,
+            "jy": 0.6158500980522165
+          },
+          {
+            "sa3_name": "Wyong",
+            "coverage": "Both home & residential",
+            "pop_65plus": 37172.0,
+            "jx": 0.05808361216819946,
+            "jy": 0.6350936508676438
+          },
+          {
+            "sa3_name": "Bathurst",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9921.0,
+            "jx": 0.8661761457749352,
+            "jy": 0.04530400977204452
+          },
+          {
+            "sa3_name": "Lachlan Valley",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13079.0,
+            "jx": 0.6011150117432088,
+            "jy": 0.3746126146264712
+          },
+          {
+            "sa3_name": "Lithgow - Mudgee",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11224.0,
+            "jx": 0.7080725777960455,
+            "jy": 0.6258599157142364
+          },
+          {
+            "sa3_name": "Orange",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11827.0,
+            "jx": 0.020584494295802447,
+            "jy": 0.5031362585800877
+          },
+          {
+            "sa3_name": "Clarence Valley",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15712.0,
+            "jx": 0.9699098521619943,
+            "jy": 0.8564898411883223
+          },
+          {
+            "sa3_name": "Coffs Harbour",
+            "coverage": "Both home & residential",
+            "pop_65plus": 23082.0,
+            "jx": 0.8324426408004217,
+            "jy": 0.658693631618945
+          },
+          {
+            "sa3_name": "Bourke - Cobar - Coonamble",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4452.0,
+            "jx": 0.21233911067827616,
+            "jy": 0.1629344270814297
+          },
+          {
+            "sa3_name": "Broken Hill and Far West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4641.0,
+            "jx": 0.18182496720710062,
+            "jy": 0.07056874740042984
+          },
+          {
+            "sa3_name": "Dubbo",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14933.0,
+            "jx": 0.18340450985343382,
+            "jy": 0.6424192782063156
+          },
+          {
+            "sa3_name": "Lower Hunter",
+            "coverage": "Both home & residential",
+            "pop_65plus": 18048.0,
+            "jx": 0.3042422429595377,
+            "jy": 0.026511310541621813
+          },
+          {
+            "sa3_name": "Maitland",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14808.0,
+            "jx": 0.5247564316322378,
+            "jy": 0.5857755812734633
+          },
+          {
+            "sa3_name": "Port Stephens",
+            "coverage": "Both home & residential",
+            "pop_65plus": 22569.0,
+            "jx": 0.43194501864211576,
+            "jy": 0.9402302414249576
+          },
+          {
+            "sa3_name": "Upper Hunter",
+            "coverage": "Both home & residential",
+            "pop_65plus": 5830.0,
+            "jx": 0.2912291401980419,
+            "jy": 0.575474177875879
+          },
+          {
+            "sa3_name": "Dapto - Port Kembla",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15798.0,
+            "jx": 0.6118528947223795,
+            "jy": 0.3881699262065219
+          },
+          {
+            "sa3_name": "Illawarra Catchment Reserve",
+            "coverage": "Home care only",
+            "pop_65plus": 0.0,
+            "jx": 0.13949386065204183,
+            "jy": 0.6432882184423532
+          },
+          {
+            "sa3_name": "Kiama - Shellharbour",
+            "coverage": "Both home & residential",
+            "pop_65plus": 21893.0,
+            "jx": 0.29214464853521815,
+            "jy": 0.45825289049151663
+          },
+          {
+            "sa3_name": "Wollongong",
+            "coverage": "Both home & residential",
+            "pop_65plus": 25158.0,
+            "jx": 0.3663618432936917,
+            "jy": 0.5456167893159349
+          },
+          {
+            "sa3_name": "Great Lakes",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12395.0,
+            "jx": 0.45606998421703593,
+            "jy": 0.9414648087765252
+          },
+          {
+            "sa3_name": "Kempsey - Nambucca",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15069.0,
+            "jx": 0.7851759613930136,
+            "jy": 0.38610263780077425
+          },
+          {
+            "sa3_name": "Lord Howe Island",
+            "coverage": "Neither",
+            "pop_65plus": 97.0,
+            "jx": 0.19967378215835974,
+            "jy": 0.9611905638239142
+          },
+          {
+            "sa3_name": "Port Macquarie",
+            "coverage": "Both home & residential",
+            "pop_65plus": 26813.0,
+            "jx": 0.5142344384136116,
+            "jy": 0.9053506419560637
+          },
+          {
+            "sa3_name": "Taree - Gloucester",
+            "coverage": "Both home & residential",
+            "pop_65plus": 18169.0,
+            "jx": 0.5924145688620425,
+            "jy": 0.19579113478929644
+          },
+          {
+            "sa3_name": "Albury",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14292.0,
+            "jx": 0.046450412719997725,
+            "jy": 0.06936130087516545
+          },
+          {
+            "sa3_name": "Lower Murray",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3013.0,
+            "jx": 0.6075448519014384,
+            "jy": 0.10077800137742665
+          },
+          {
+            "sa3_name": "Upper Murray exc. Albury",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13489.0,
+            "jx": 0.17052412368729153,
+            "jy": 0.018221825651549728
+          },
+          {
+            "sa3_name": "Armidale",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7798.0,
+            "jx": 0.06505159298527952,
+            "jy": 0.0944429607559284
+          },
+          {
+            "sa3_name": "Inverell - Tenterfield",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10886.0,
+            "jx": 0.9488855372533332,
+            "jy": 0.6830067734163568
+          },
+          {
+            "sa3_name": "Moree - Narrabri",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4615.0,
+            "jx": 0.9656320330745594,
+            "jy": 0.07118864846022899
+          },
+          {
+            "sa3_name": "Tamworth - Gunnedah",
+            "coverage": "Both home & residential",
+            "pop_65plus": 17858.0,
+            "jx": 0.8083973481164611,
+            "jy": 0.3189756302937613
+          },
+          {
+            "sa3_name": "Lake Macquarie - East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 28081.0,
+            "jx": 0.3046137691733707,
+            "jy": 0.8448753109694546
+          },
+          {
+            "sa3_name": "Lake Macquarie - West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 20111.0,
+            "jx": 0.09767211400638387,
+            "jy": 0.023271935735825866
+          },
+          {
+            "sa3_name": "Newcastle",
+            "coverage": "Both home & residential",
+            "pop_65plus": 31958.0,
+            "jx": 0.6842330265121569,
+            "jy": 0.8144684825889358
+          },
+          {
+            "sa3_name": "Richmond Valley - Coastal",
+            "coverage": "Both home & residential",
+            "pop_65plus": 21921.0,
+            "jx": 0.4401524937396013,
+            "jy": 0.28185477477339993
+          },
+          {
+            "sa3_name": "Richmond Valley - Hinterland",
+            "coverage": "Both home & residential",
+            "pop_65plus": 16704.0,
+            "jx": 0.12203823484477883,
+            "jy": 0.11816482762165625
+          },
+          {
+            "sa3_name": "Tweed Valley",
+            "coverage": "Both home & residential",
+            "pop_65plus": 26951.0,
+            "jx": 0.4951769101112702,
+            "jy": 0.6967371653641506
+          },
+          {
+            "sa3_name": "Griffith - Murrumbidgee (West)",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9103.0,
+            "jx": 0.034388521115218396,
+            "jy": 0.628942846779884
+          },
+          {
+            "sa3_name": "Tumut - Tumbarumba",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3676.0,
+            "jx": 0.9093204020787821,
+            "jy": 0.877472013527053
+          },
+          {
+            "sa3_name": "Wagga Wagga",
+            "coverage": "Both home & residential",
+            "pop_65plus": 20093.0,
+            "jx": 0.2587799816000169,
+            "jy": 0.7350710438038858
+          },
+          {
+            "sa3_name": "Shoalhaven",
+            "coverage": "Both home & residential",
+            "pop_65plus": 31663.0,
+            "jx": 0.662522284353982,
+            "jy": 0.8034809303848486
+          },
+          {
+            "sa3_name": "Southern Highlands",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15109.0,
+            "jx": 0.31171107608941095,
+            "jy": 0.2820345725713065
+          },
+          {
+            "sa3_name": "Baulkham Hills",
+            "coverage": "Both home & residential",
+            "pop_65plus": 29062.0,
+            "jx": 0.5200680211778108,
+            "jy": 0.17743954377972282
+          },
+          {
+            "sa3_name": "Dural - Wisemans Ferry",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6028.0,
+            "jx": 0.5467102793432796,
+            "jy": 0.7506147516408583
+          },
+          {
+            "sa3_name": "Hawkesbury",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4445.0,
+            "jx": 0.18485445552552704,
+            "jy": 0.806834739267264
+          },
+          {
+            "sa3_name": "Rouse Hill - McGraths Hill",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6775.0,
+            "jx": 0.9695846277645586,
+            "jy": 0.9905051420006733
+          },
+          {
+            "sa3_name": "Blacktown",
+            "coverage": "Both home & residential",
+            "pop_65plus": 20969.0,
+            "jx": 0.7751328233611146,
+            "jy": 0.4126176769114265
+          },
+          {
+            "sa3_name": "Blacktown - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13047.0,
+            "jx": 0.9394989415641891,
+            "jy": 0.37201808579278317
+          },
+          {
+            "sa3_name": "Mount Druitt",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14627.0,
+            "jx": 0.8948273504276488,
+            "jy": 0.7764129607419968
+          },
+          {
+            "sa3_name": "Botany",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7479.0,
+            "jx": 0.5978999788110851,
+            "jy": 0.34080354025301784
+          },
+          {
+            "sa3_name": "Marrickville - Sydenham - Petersham",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7042.0,
+            "jx": 0.9218742350231168,
+            "jy": 0.9307573256035647
+          },
+          {
+            "sa3_name": "Sydney Inner City",
+            "coverage": "Both home & residential",
+            "pop_65plus": 22052.0,
+            "jx": 0.0884925020519195,
+            "jy": 0.8584127518430118
+          },
+          {
+            "sa3_name": "Eastern Suburbs - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 20799.0,
+            "jx": 0.1959828624191452,
+            "jy": 0.42899402737501835
+          },
+          {
+            "sa3_name": "Eastern Suburbs - South",
+            "coverage": "Both home & residential",
+            "pop_65plus": 20797.0,
+            "jx": 0.045227288910538066,
+            "jy": 0.7508710677914974
+          },
+          {
+            "sa3_name": "Bankstown",
+            "coverage": "Both home & residential",
+            "pop_65plus": 29160.0,
+            "jx": 0.32533033076326434,
+            "jy": 0.7545428740846823
+          },
+          {
+            "sa3_name": "Canterbury",
+            "coverage": "Both home & residential",
+            "pop_65plus": 21800.0,
+            "jx": 0.388677289689482,
+            "jy": 0.10312386883593261
+          },
+          {
+            "sa3_name": "Hurstville",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24832.0,
+            "jx": 0.2713490317738959,
+            "jy": 0.9025529066795667
+          },
+          {
+            "sa3_name": "Kogarah - Rockdale",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24180.0,
+            "jx": 0.8287375091519293,
+            "jy": 0.5052523724478571
+          },
+          {
+            "sa3_name": "Canada Bay",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15746.0,
+            "jx": 0.3567533266935893,
+            "jy": 0.8264574661077416
+          },
+          {
+            "sa3_name": "Leichhardt",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8597.0,
+            "jx": 0.28093450968738076,
+            "jy": 0.32004960103061175
+          },
+          {
+            "sa3_name": "Strathfield - Burwood - Ashfield",
+            "coverage": "Both home & residential",
+            "pop_65plus": 23868.0,
+            "jx": 0.5426960831582485,
+            "jy": 0.8955232284962005
+          },
+          {
+            "sa3_name": "Chatswood - Lane Cove",
+            "coverage": "Both home & residential",
+            "pop_65plus": 18720.0,
+            "jx": 0.14092422497476265,
+            "jy": 0.3892016787341631
+          },
+          {
+            "sa3_name": "Hornsby",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14592.0,
+            "jx": 0.8021969807540397,
+            "jy": 0.01083765148029836
+          },
+          {
+            "sa3_name": "Ku-ring-gai",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24800.0,
+            "jx": 0.07455064367977082,
+            "jy": 0.9053819764192637
+          },
+          {
+            "sa3_name": "North Sydney - Mosman",
+            "coverage": "Both home & residential",
+            "pop_65plus": 18670.0,
+            "jx": 0.9868869366005173,
+            "jy": 0.09128667678613356
+          },
+          {
+            "sa3_name": "Manly",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7087.0,
+            "jx": 0.7722447692966574,
+            "jy": 0.31931363759041487
+          },
+          {
+            "sa3_name": "Pittwater",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14895.0,
+            "jx": 0.1987156815341724,
+            "jy": 0.9500619670508049
+          },
+          {
+            "sa3_name": "Warringah",
+            "coverage": "Both home & residential",
+            "pop_65plus": 27236.0,
+            "jx": 0.005522117123602399,
+            "jy": 0.9506071469375561
+          },
+          {
+            "sa3_name": "Camden",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9414.0,
+            "jx": 0.8154614284548342,
+            "jy": 0.5734378881232861
+          },
+          {
+            "sa3_name": "Campbelltown (NSW)",
+            "coverage": "Both home & residential",
+            "pop_65plus": 25790.0,
+            "jx": 0.7068573438476171,
+            "jy": 0.6318372121697993
+          },
+          {
+            "sa3_name": "Wollondilly",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8079.0,
+            "jx": 0.7290071680409873,
+            "jy": 0.44844552197831977
+          },
+          {
+            "sa3_name": "Blue Mountains",
+            "coverage": "Both home & residential",
+            "pop_65plus": 18347.0,
+            "jx": 0.7712703466859457,
+            "jy": 0.29321077169806453
+          },
+          {
+            "sa3_name": "Blue Mountains - South",
+            "coverage": "Neither",
+            "pop_65plus": 4.0,
+            "jx": 0.07404465173409036,
+            "jy": 0.32866454536991596
+          },
+          {
+            "sa3_name": "Penrith",
+            "coverage": "Both home & residential",
+            "pop_65plus": 22519.0,
+            "jx": 0.3584657285442726,
+            "jy": 0.6725184560770384
+          },
+          {
+            "sa3_name": "Richmond - Windsor",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6596.0,
+            "jx": 0.11586905952512971,
+            "jy": 0.75237452943768
+          },
+          {
+            "sa3_name": "St Marys",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8003.0,
+            "jx": 0.8631034258755935,
+            "jy": 0.7915790437258485
+          },
+          {
+            "sa3_name": "Auburn",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11715.0,
+            "jx": 0.6232981268275579,
+            "jy": 0.7896181427945539
+          },
+          {
+            "sa3_name": "Carlingford",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12266.0,
+            "jx": 0.3308980248526492,
+            "jy": 0.09120610304869037
+          },
+          {
+            "sa3_name": "Merrylands - Guildford",
+            "coverage": "Both home & residential",
+            "pop_65plus": 22930.0,
+            "jx": 0.06355835028602363,
+            "jy": 0.49442030470258147
+          },
+          {
+            "sa3_name": "Parramatta",
+            "coverage": "Both home & residential",
+            "pop_65plus": 19086.0,
+            "jx": 0.3109823217156622,
+            "jy": 0.057558760016644284
+          },
+          {
+            "sa3_name": "Pennant Hills - Epping",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9464.0,
+            "jx": 0.32518332202674705,
+            "jy": 0.5495288823237355
+          },
+          {
+            "sa3_name": "Ryde - Hunters Hill",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24519.0,
+            "jx": 0.7296061783380641,
+            "jy": 0.441530501373377
+          },
+          {
+            "sa3_name": "Bringelly - Green Valley",
+            "coverage": "Both home & residential",
+            "pop_65plus": 16461.0,
+            "jx": 0.6375574713552131,
+            "jy": 0.8877041827582998
+          },
+          {
+            "sa3_name": "Fairfield",
+            "coverage": "Both home & residential",
+            "pop_65plus": 35541.0,
+            "jx": 0.8872127425763265,
+            "jy": 0.3509150125520787
+          },
+          {
+            "sa3_name": "Liverpool",
+            "coverage": "Both home & residential",
+            "pop_65plus": 17922.0,
+            "jx": 0.4722149251619493,
+            "jy": 0.11706701642760586
+          },
+          {
+            "sa3_name": "Cronulla - Miranda - Caringbah",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24905.0,
+            "jx": 0.1195942459383017,
+            "jy": 0.14299168205283586
+          },
+          {
+            "sa3_name": "Sutherland - Menai - Heathcote",
+            "coverage": "Both home & residential",
+            "pop_65plus": 20535.0,
+            "jx": 0.713244787222995,
+            "jy": 0.7615106317174722
+          },
+          {
+            "sa3_name": "Ballarat",
+            "coverage": "Both home & residential",
+            "pop_65plus": 23245.0,
+            "jx": 0.7607850486168974,
+            "jy": 0.6182180633162611
+          },
+          {
+            "sa3_name": "Creswick - Daylesford - Ballan",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7975.0,
+            "jx": 0.5612771975694962,
+            "jy": 0.10112267612279024
+          },
+          {
+            "sa3_name": "Maryborough - Pyrenees",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7886.0,
+            "jx": 0.770967179954561,
+            "jy": 0.08410680611499743
+          },
+          {
+            "sa3_name": "Bendigo",
+            "coverage": "Both home & residential",
+            "pop_65plus": 21268.0,
+            "jx": 0.49379559636439074,
+            "jy": 0.70096913145912
+          },
+          {
+            "sa3_name": "Heathcote - Castlemaine - Kyneton",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14107.0,
+            "jx": 0.5227328293819941,
+            "jy": 0.07276300636419353
+          },
+          {
+            "sa3_name": "Loddon - Elmore",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3440.0,
+            "jx": 0.42754101835854963,
+            "jy": 0.8218600592903562
+          },
+          {
+            "sa3_name": "Barwon - West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3895.0,
+            "jx": 0.02541912674409519,
+            "jy": 0.7062422271564962
+          },
+          {
+            "sa3_name": "Geelong",
+            "coverage": "Both home & residential",
+            "pop_65plus": 39996.0,
+            "jx": 0.10789142699330445,
+            "jy": 0.08134878064189976
+          },
+          {
+            "sa3_name": "Surf Coast - Bellarine Peninsula",
+            "coverage": "Both home & residential",
+            "pop_65plus": 25728.0,
+            "jx": 0.03142918568673425,
+            "jy": 0.08483771408519192
+          },
+          {
+            "sa3_name": "Upper Goulburn Valley",
+            "coverage": "Both home & residential",
+            "pop_65plus": 16102.0,
+            "jx": 0.6364104112637804,
+            "jy": 0.9866395785011755
+          },
+          {
+            "sa3_name": "Wangaratta - Benalla",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13118.0,
+            "jx": 0.3143559810763267,
+            "jy": 0.3742707957561203
+          },
+          {
+            "sa3_name": "Wodonga - Alpine",
+            "coverage": "Both home & residential",
+            "pop_65plus": 17101.0,
+            "jx": 0.5085706911647028,
+            "jy": 0.3706421470668909
+          },
+          {
+            "sa3_name": "Baw Baw",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13587.0,
+            "jx": 0.907566473926093,
+            "jy": 0.8127995672575026
+          },
+          {
+            "sa3_name": "Gippsland - East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15960.0,
+            "jx": 0.24929222914887494,
+            "jy": 0.9472485773838587
+          },
+          {
+            "sa3_name": "Gippsland - South West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 22227.0,
+            "jx": 0.41038292303562973,
+            "jy": 0.9860010638228709
+          },
+          {
+            "sa3_name": "Latrobe Valley",
+            "coverage": "Both home & residential",
+            "pop_65plus": 17063.0,
+            "jx": 0.7555511385430487,
+            "jy": 0.7533781852589416
+          },
+          {
+            "sa3_name": "Wellington",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11390.0,
+            "jx": 0.22879816549162246,
+            "jy": 0.37625958553091576
+          },
+          {
+            "sa3_name": "Brunswick - Coburg",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11370.0,
+            "jx": 0.07697990982879299,
+            "jy": 0.08350071669866876
+          },
+          {
+            "sa3_name": "Darebin - South",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7439.0,
+            "jx": 0.289751452913768,
+            "jy": 0.7771469159274368
+          },
+          {
+            "sa3_name": "Essendon",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10944.0,
+            "jx": 0.16122128725400442,
+            "jy": 0.558404249735805
+          },
+          {
+            "sa3_name": "Melbourne City",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11878.0,
+            "jx": 0.9296976523425731,
+            "jy": 0.4242220092469763
+          },
+          {
+            "sa3_name": "Port Phillip",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15177.0,
+            "jx": 0.808120379564417,
+            "jy": 0.906354385094736
+          },
+          {
+            "sa3_name": "Stonnington - West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10459.0,
+            "jx": 0.6334037565104235,
+            "jy": 0.11119748230615134
+          },
+          {
+            "sa3_name": "Yarra",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11521.0,
+            "jx": 0.8714605901877177,
+            "jy": 0.49262510429085915
+          },
+          {
+            "sa3_name": "Boroondara",
+            "coverage": "Both home & residential",
+            "pop_65plus": 32084.0,
+            "jx": 0.8036720768991145,
+            "jy": 0.011353644767419069
+          },
+          {
+            "sa3_name": "Manningham - West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 22934.0,
+            "jx": 0.18657005888603584,
+            "jy": 0.46866064199412627
+          },
+          {
+            "sa3_name": "Whitehorse - West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 19845.0,
+            "jx": 0.8925589984899778,
+            "jy": 0.05630327568183735
+          },
+          {
+            "sa3_name": "Bayside",
+            "coverage": "Both home & residential",
+            "pop_65plus": 22811.0,
+            "jx": 0.5393422419156507,
+            "jy": 0.11881791626807192
+          },
+          {
+            "sa3_name": "Glen Eira",
+            "coverage": "Both home & residential",
+            "pop_65plus": 26617.0,
+            "jx": 0.8074401551640625,
+            "jy": 0.11752624677710488
+          },
+          {
+            "sa3_name": "Kingston",
+            "coverage": "Both home & residential",
+            "pop_65plus": 23419.0,
+            "jx": 0.8960912999234932,
+            "jy": 0.6492103021160636
+          },
+          {
+            "sa3_name": "Stonnington - East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8002.0,
+            "jx": 0.3180034749718639,
+            "jy": 0.7460448792654233
+          },
+          {
+            "sa3_name": "Banyule",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24705.0,
+            "jx": 0.11005192452767676,
+            "jy": 0.5833687650971596
+          },
+          {
+            "sa3_name": "Darebin - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14902.0,
+            "jx": 0.22793516254194168,
+            "jy": 0.9621725484745419
+          },
+          {
+            "sa3_name": "Nillumbik - Kinglake",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12277.0,
+            "jx": 0.4271077886262563,
+            "jy": 0.37487057952370406
+          },
+          {
+            "sa3_name": "Whittlesea - Wallan",
+            "coverage": "Both home & residential",
+            "pop_65plus": 35118.0,
+            "jx": 0.8180147659224931,
+            "jy": 0.28571208628186073
+          },
+          {
+            "sa3_name": "Keilor",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13444.0,
+            "jx": 0.8607305832563434,
+            "jy": 0.8685991281894603
+          },
+          {
+            "sa3_name": "Macedon Ranges",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6261.0,
+            "jx": 0.006952130531190703,
+            "jy": 0.22359583851945264
+          },
+          {
+            "sa3_name": "Moreland - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11395.0,
+            "jx": 0.5107473025775657,
+            "jy": 0.9632225394406113
+          },
+          {
+            "sa3_name": "Sunbury",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7266.0,
+            "jx": 0.417411003148779,
+            "jy": 0.012154474689816341
+          },
+          {
+            "sa3_name": "Tullamarine - Broadmeadows",
+            "coverage": "Both home & residential",
+            "pop_65plus": 23007.0,
+            "jx": 0.22210781047073025,
+            "jy": 0.969878826707639
+          },
+          {
+            "sa3_name": "Knox",
+            "coverage": "Both home & residential",
+            "pop_65plus": 30065.0,
+            "jx": 0.1198653673336828,
+            "jy": 0.04315991195057611
+          },
+          {
+            "sa3_name": "Manningham - East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 5661.0,
+            "jx": 0.33761517140362796,
+            "jy": 0.8911431136980711
+          },
+          {
+            "sa3_name": "Maroondah",
+            "coverage": "Both home & residential",
+            "pop_65plus": 21060.0,
+            "jx": 0.9429097039125192,
+            "jy": 0.5277011090862999
+          },
+          {
+            "sa3_name": "Whitehorse - East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12798.0,
+            "jx": 0.32320293202075523,
+            "jy": 0.9929647961193003
+          },
+          {
+            "sa3_name": "Yarra Ranges",
+            "coverage": "Both home & residential",
+            "pop_65plus": 29387.0,
+            "jx": 0.5187906217433661,
+            "jy": 0.07379656473539886
+          },
+          {
+            "sa3_name": "Cardinia",
+            "coverage": "Both home & residential",
+            "pop_65plus": 16656.0,
+            "jx": 0.7030189588951778,
+            "jy": 0.5538542844013208
+          },
+          {
+            "sa3_name": "Casey - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 21370.0,
+            "jx": 0.363629602379294,
+            "jy": 0.969302535619099
+          },
+          {
+            "sa3_name": "Casey - South",
+            "coverage": "Both home & residential",
+            "pop_65plus": 23456.0,
+            "jx": 0.9717820827209607,
+            "jy": 0.5230978441701488
+          },
+          {
+            "sa3_name": "Dandenong",
+            "coverage": "Both home & residential",
+            "pop_65plus": 33736.0,
+            "jx": 0.9624472949421112,
+            "jy": 0.6293986381352625
+          },
+          {
+            "sa3_name": "Monash",
+            "coverage": "Both home & residential",
+            "pop_65plus": 33569.0,
+            "jx": 0.25178229582536416,
+            "jy": 0.6957486889846172
+          },
+          {
+            "sa3_name": "Brimbank",
+            "coverage": "Both home & residential",
+            "pop_65plus": 31568.0,
+            "jx": 0.49724850589238545,
+            "jy": 0.45454106476777323
+          },
+          {
+            "sa3_name": "Hobsons Bay",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15125.0,
+            "jx": 0.30087830981676966,
+            "jy": 0.6275580800840634
+          },
+          {
+            "sa3_name": "Maribyrnong",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10003.0,
+            "jx": 0.2848404943774676,
+            "jy": 0.5843143119231002
+          },
+          {
+            "sa3_name": "Melton - Bacchus Marsh",
+            "coverage": "Both home & residential",
+            "pop_65plus": 22960.0,
+            "jx": 0.036886947354532795,
+            "jy": 0.901158010490989
+          },
+          {
+            "sa3_name": "Wyndham",
+            "coverage": "Both home & residential",
+            "pop_65plus": 26311.0,
+            "jx": 0.6095643339798968,
+            "jy": 0.04544638034145787
+          },
+          {
+            "sa3_name": "Frankston",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24235.0,
+            "jx": 0.5026790232288615,
+            "jy": 0.2809631895922303
+          },
+          {
+            "sa3_name": "Mornington Peninsula",
+            "coverage": "Both home & residential",
+            "pop_65plus": 48518.0,
+            "jx": 0.05147875124998935,
+            "jy": 0.9504114840765587
+          },
+          {
+            "sa3_name": "Grampians",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15308.0,
+            "jx": 0.27864646423661144,
+            "jy": 0.8902637838909163
+          },
+          {
+            "sa3_name": "Mildura",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11666.0,
+            "jx": 0.9082658859666537,
+            "jy": 0.45565675278571294
+          },
+          {
+            "sa3_name": "Murray River - Swan Hill",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9315.0,
+            "jx": 0.23956189066697242,
+            "jy": 0.6201325978015367
+          },
+          {
+            "sa3_name": "Campaspe",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9931.0,
+            "jx": 0.1448948720912231,
+            "jy": 0.2773811829811327
+          },
+          {
+            "sa3_name": "Moira",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8818.0,
+            "jx": 0.489452760277563,
+            "jy": 0.1881211597237613
+          },
+          {
+            "sa3_name": "Shepparton",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13820.0,
+            "jx": 0.9856504541106007,
+            "jy": 0.46369840493998216
+          },
+          {
+            "sa3_name": "Glenelg - Southern Grampians",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9986.0,
+            "jx": 0.2420552715115004,
+            "jy": 0.3533522280260528
+          },
+          {
+            "sa3_name": "Colac - Corangamite",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9786.0,
+            "jx": 0.6721355474058786,
+            "jy": 0.5836561118508721
+          },
+          {
+            "sa3_name": "Warrnambool",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11967.0,
+            "jx": 0.7616196153287176,
+            "jy": 0.07773463696498484
+          },
+          {
+            "sa3_name": "Capalaba",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14360.0,
+            "jx": 0.23763754399239967,
+            "jy": 0.9743948076661665
+          },
+          {
+            "sa3_name": "Cleveland - Stradbroke",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24030.0,
+            "jx": 0.7282163486118596,
+            "jy": 0.9862107444796029
+          },
+          {
+            "sa3_name": "Wynnum - Manly",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12001.0,
+            "jx": 0.3677831327192532,
+            "jy": 0.6981617140197451
+          },
+          {
+            "sa3_name": "Bald Hills - Everton Park",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7834.0,
+            "jx": 0.6323058305935795,
+            "jy": 0.5360963663441204
+          },
+          {
+            "sa3_name": "Chermside",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12215.0,
+            "jx": 0.6335297107608947,
+            "jy": 0.30952761628632774
+          },
+          {
+            "sa3_name": "Nundah",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6094.0,
+            "jx": 0.5357746840747585,
+            "jy": 0.8137950197069487
+          },
+          {
+            "sa3_name": "Sandgate",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11020.0,
+            "jx": 0.0902897700544083,
+            "jy": 0.6847311725538793
+          },
+          {
+            "sa3_name": "Carindale",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8633.0,
+            "jx": 0.835302495589238,
+            "jy": 0.1626169393448913
+          },
+          {
+            "sa3_name": "Holland Park - Yeronga",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9679.0,
+            "jx": 0.32078006497173583,
+            "jy": 0.9109271844938425
+          },
+          {
+            "sa3_name": "Mt Gravatt",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11624.0,
+            "jx": 0.18651851039985423,
+            "jy": 0.822537242923169
+          },
+          {
+            "sa3_name": "Nathan",
+            "coverage": "Both home & residential",
+            "pop_65plus": 5429.0,
+            "jx": 0.040775141554763916,
+            "jy": 0.949799913291924
+          },
+          {
+            "sa3_name": "Rocklea - Acacia Ridge",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8570.0,
+            "jx": 0.5908929431882418,
+            "jy": 0.72571950838836
+          },
+          {
+            "sa3_name": "Sunnybank",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7830.0,
+            "jx": 0.6775643618422824,
+            "jy": 0.6134151959357899
+          },
+          {
+            "sa3_name": "Centenary",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6416.0,
+            "jx": 0.016587828927856152,
+            "jy": 0.4182430362906189
+          },
+          {
+            "sa3_name": "Kenmore - Brookfield - Moggill",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8555.0,
+            "jx": 0.512093058299281,
+            "jy": 0.9327284833540133
+          },
+          {
+            "sa3_name": "Sherwood - Indooroopilly",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8037.0,
+            "jx": 0.22649577519793795,
+            "jy": 0.8660638895004084
+          },
+          {
+            "sa3_name": "The Gap - Enoggera",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8284.0,
+            "jx": 0.6451727904094499,
+            "jy": 0.04521867010618941
+          },
+          {
+            "sa3_name": "Brisbane Inner",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9915.0,
+            "jx": 0.17436642900499144,
+            "jy": 0.026366974497252005
+          },
+          {
+            "sa3_name": "Brisbane Inner - East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4883.0,
+            "jx": 0.690937738102466,
+            "jy": 0.3764633668780496
+          },
+          {
+            "sa3_name": "Brisbane Inner - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12223.0,
+            "jx": 0.3867353463005374,
+            "jy": 0.8105533307818329
+          },
+          {
+            "sa3_name": "Brisbane Inner - West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7012.0,
+            "jx": 0.9367299887367345,
+            "jy": 0.9872761293149445
+          },
+          {
+            "sa3_name": "Cairns - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10408.0,
+            "jx": 0.13752094414599325,
+            "jy": 0.15041689110352818
+          },
+          {
+            "sa3_name": "Cairns - South",
+            "coverage": "Both home & residential",
+            "pop_65plus": 17632.0,
+            "jx": 0.3410663510502585,
+            "jy": 0.5941307153521351
+          },
+          {
+            "sa3_name": "Innisfail - Cassowary Coast",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8561.0,
+            "jx": 0.11347352124058907,
+            "jy": 0.3808908566310215
+          },
+          {
+            "sa3_name": "Port Douglas - Daintree",
+            "coverage": "Both home & residential",
+            "pop_65plus": 2826.0,
+            "jx": 0.9246936182785628,
+            "jy": 0.9699143978146032
+          },
+          {
+            "sa3_name": "Tablelands (East) - Kuranda",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11509.0,
+            "jx": 0.877339353380981,
+            "jy": 0.8421189231357087
+          },
+          {
+            "sa3_name": "Darling Downs (West) - Maranoa",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8357.0,
+            "jx": 0.2579416277151556,
+            "jy": 0.8383287047111379
+          },
+          {
+            "sa3_name": "Darling Downs - East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9524.0,
+            "jx": 0.659984046034179,
+            "jy": 0.4686931597949703
+          },
+          {
+            "sa3_name": "Granite Belt",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11731.0,
+            "jx": 0.8172222002012158,
+            "jy": 0.4148195023376652
+          },
+          {
+            "sa3_name": "Central Highlands (Qld)",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3224.0,
+            "jx": 0.5552008115994623,
+            "jy": 0.27340707193070624
+          },
+          {
+            "sa3_name": "Rockhampton",
+            "coverage": "Both home & residential",
+            "pop_65plus": 23759.0,
+            "jx": 0.5296505783560065,
+            "jy": 0.056375496650927115
+          },
+          {
+            "sa3_name": "Biloela",
+            "coverage": "Both home & residential",
+            "pop_65plus": 2510.0,
+            "jx": 0.24185229090045168,
+            "jy": 0.8647223762550532
+          },
+          {
+            "sa3_name": "Gladstone",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10359.0,
+            "jx": 0.09310276780589921,
+            "jy": 0.8129010091300776
+          },
+          {
+            "sa3_name": "Broadbeach - Burleigh",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13926.0,
+            "jx": 0.8972157579533268,
+            "jy": 0.9997176732861306
+          },
+          {
+            "sa3_name": "Coolangatta",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12049.0,
+            "jx": 0.9004180571633305,
+            "jy": 0.9966368370739054
+          },
+          {
+            "sa3_name": "Gold Coast - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 19211.0,
+            "jx": 0.6331014572732679,
+            "jy": 0.5554317056026274
+          },
+          {
+            "sa3_name": "Gold Coast Hinterland",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4591.0,
+            "jx": 0.3390297910487007,
+            "jy": 0.7689874151805105
+          },
+          {
+            "sa3_name": "Mudgeeraba - Tallebudgera",
+            "coverage": "Both home & residential",
+            "pop_65plus": 5593.0,
+            "jx": 0.3492095746126609,
+            "jy": 0.944765729882428
+          },
+          {
+            "sa3_name": "Nerang",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12507.0,
+            "jx": 0.7259556788702394,
+            "jy": 0.8496473906774115
+          },
+          {
+            "sa3_name": "Ormeau - Oxenford",
+            "coverage": "Both home & residential",
+            "pop_65plus": 22174.0,
+            "jx": 0.8971102599525771,
+            "jy": 0.24734810174319766
+          },
+          {
+            "sa3_name": "Robina",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10276.0,
+            "jx": 0.8870864242651173,
+            "jy": 0.4505441353100935
+          },
+          {
+            "sa3_name": "Southport",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12303.0,
+            "jx": 0.7798755458576239,
+            "jy": 0.12915941515149498
+          },
+          {
+            "sa3_name": "Surfers Paradise",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11509.0,
+            "jx": 0.6420316461542878,
+            "jy": 0.9540510272587224
+          },
+          {
+            "sa3_name": "Forest Lake - Oxley",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10609.0,
+            "jx": 0.08413996499504883,
+            "jy": 0.60617463445088
+          },
+          {
+            "sa3_name": "Ipswich Hinterland",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14874.0,
+            "jx": 0.16162871409461377,
+            "jy": 0.22864280550346272
+          },
+          {
+            "sa3_name": "Ipswich Inner",
+            "coverage": "Both home & residential",
+            "pop_65plus": 18511.0,
+            "jx": 0.8985541885270792,
+            "jy": 0.6717006844058567
+          },
+          {
+            "sa3_name": "Springfield - Redbank",
+            "coverage": "Home care only",
+            "pop_65plus": 9843.0,
+            "jx": 0.6064290596595899,
+            "jy": 0.6181282404578958
+          },
+          {
+            "sa3_name": "Beaudesert",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3766.0,
+            "jx": 0.009197051616629648,
+            "jy": 0.3581627180328405
+          },
+          {
+            "sa3_name": "Beenleigh",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8014.0,
+            "jx": 0.1014715428660321,
+            "jy": 0.11355759219962902
+          },
+          {
+            "sa3_name": "Browns Plains",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12298.0,
+            "jx": 0.6635017691080558,
+            "jy": 0.6715731955927996
+          },
+          {
+            "sa3_name": "Jimboomba",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8121.0,
+            "jx": 0.005061583846218687,
+            "jy": 0.5203077009037933
+          },
+          {
+            "sa3_name": "Loganlea - Carbrook",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10748.0,
+            "jx": 0.16080805141749865,
+            "jy": 0.7723183917356393
+          },
+          {
+            "sa3_name": "Springwood - Kingston",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11959.0,
+            "jx": 0.5487337893665861,
+            "jy": 0.5201635011119934
+          },
+          {
+            "sa3_name": "Bowen Basin - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4779.0,
+            "jx": 0.6918951976926933,
+            "jy": 0.8521815003185401
+          },
+          {
+            "sa3_name": "Mackay",
+            "coverage": "Both home & residential",
+            "pop_65plus": 20772.0,
+            "jx": 0.6519612595026005,
+            "jy": 0.5519068387744855
+          },
+          {
+            "sa3_name": "Whitsunday",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3995.0,
+            "jx": 0.22426930946055978,
+            "jy": 0.5609379715353863
+          },
+          {
+            "sa3_name": "Bribie - Beachmere",
+            "coverage": "Both home & residential",
+            "pop_65plus": 16643.0,
+            "jx": 0.7121792213475359,
+            "jy": 0.876653602658345
+          },
+          {
+            "sa3_name": "Caboolture",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14147.0,
+            "jx": 0.23724908749680007,
+            "jy": 0.40348286621239704
+          },
+          {
+            "sa3_name": "Caboolture Hinterland",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3183.0,
+            "jx": 0.3253996981592677,
+            "jy": 0.13401522845064073
+          },
+          {
+            "sa3_name": "Narangba - Burpengary",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12139.0,
+            "jx": 0.7464914051180241,
+            "jy": 0.028782676313338973
+          },
+          {
+            "sa3_name": "Redcliffe",
+            "coverage": "Both home & residential",
+            "pop_65plus": 17901.0,
+            "jx": 0.6496328990472147,
+            "jy": 0.755137255673619
+          },
+          {
+            "sa3_name": "The Hills District",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14423.0,
+            "jx": 0.8492234104941779,
+            "jy": 0.6203095513534647
+          },
+          {
+            "sa3_name": "North Lakes",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10531.0,
+            "jx": 0.6576128923003434,
+            "jy": 0.7040797680992236
+          },
+          {
+            "sa3_name": "Strathpine",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6298.0,
+            "jx": 0.5683086033354716,
+            "jy": 0.21296416150891073
+          },
+          {
+            "sa3_name": "Far North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3905.0,
+            "jx": 0.09367476782809248,
+            "jy": 0.13637147558676976
+          },
+          {
+            "sa3_name": "Outback - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3111.0,
+            "jx": 0.3677158030594335,
+            "jy": 0.014544665667881929
+          },
+          {
+            "sa3_name": "Outback - South",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3582.0,
+            "jx": 0.26520236768172545,
+            "jy": 0.350587558806597
+          },
+          {
+            "sa3_name": "Buderim",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13064.0,
+            "jx": 0.24398964337908358,
+            "jy": 0.5899176868546331
+          },
+          {
+            "sa3_name": "Caloundra",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24535.0,
+            "jx": 0.9730105547524456,
+            "jy": 0.3922440450997323
+          },
+          {
+            "sa3_name": "Maroochy",
+            "coverage": "Both home & residential",
+            "pop_65plus": 16682.0,
+            "jx": 0.3930977246667604,
+            "jy": 0.43747492202372906
+          },
+          {
+            "sa3_name": "Noosa",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13118.0,
+            "jx": 0.8920465551771133,
+            "jy": 0.9041586944937484
+          },
+          {
+            "sa3_name": "Sunshine Coast Hinterland",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14275.0,
+            "jx": 0.6311386259972629,
+            "jy": 0.34825546702330035
+          },
+          {
+            "sa3_name": "Nambour",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10401.0,
+            "jx": 0.7948113035416484,
+            "jy": 0.5139894891598108
+          },
+          {
+            "sa3_name": "Noosa Hinterland",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6505.0,
+            "jx": 0.5026370931051921,
+            "jy": 0.7836530127411431
+          },
+          {
+            "sa3_name": "Toowoomba",
+            "coverage": "Both home & residential",
+            "pop_65plus": 32904.0,
+            "jx": 0.5769038846263591,
+            "jy": 0.39654278232127016
+          },
+          {
+            "sa3_name": "Charters Towers - Ayr - Ingham",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10374.0,
+            "jx": 0.4925176938188639,
+            "jy": 0.6220867002278735
+          },
+          {
+            "sa3_name": "Townsville",
+            "coverage": "Both home & residential",
+            "pop_65plus": 30551.0,
+            "jx": 0.1952429877980445,
+            "jy": 0.8623637087467452
+          },
+          {
+            "sa3_name": "Bundaberg",
+            "coverage": "Both home & residential",
+            "pop_65plus": 26703.0,
+            "jx": 0.7224521152615053,
+            "jy": 0.9495206236576421
+          },
+          {
+            "sa3_name": "Burnett",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14144.0,
+            "jx": 0.2807723624408558,
+            "jy": 0.14707348092903794
+          },
+          {
+            "sa3_name": "Gympie - Cooloola",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14930.0,
+            "jx": 0.02431596643145384,
+            "jy": 0.9265876251614944
+          },
+          {
+            "sa3_name": "Hervey Bay",
+            "coverage": "Both home & residential",
+            "pop_65plus": 21907.0,
+            "jx": 0.6454722959071678,
+            "jy": 0.4921162930795382
+          },
+          {
+            "sa3_name": "Maryborough",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15430.0,
+            "jx": 0.17711067940704894,
+            "jy": 0.25824438829895835
+          },
+          {
+            "sa3_name": "Adelaide City",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4358.0,
+            "jx": 0.9404585843529143,
+            "jy": 0.4591357562382613
+          },
+          {
+            "sa3_name": "Adelaide Hills",
+            "coverage": "Both home & residential",
+            "pop_65plus": 16654.0,
+            "jx": 0.9539285770025874,
+            "jy": 0.980032575285477
+          },
+          {
+            "sa3_name": "Burnside",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11172.0,
+            "jx": 0.9148643902204485,
+            "jy": 0.4926180939928696
+          },
+          {
+            "sa3_name": "Campbelltown (SA)",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11539.0,
+            "jx": 0.3701587002554444,
+            "jy": 0.3287516102875082
+          },
+          {
+            "sa3_name": "Norwood - Payneham - St Peters",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8215.0,
+            "jx": 0.015456616528867428,
+            "jy": 0.6334008543167258
+          },
+          {
+            "sa3_name": "Prospect - Walkerville",
+            "coverage": "Both home & residential",
+            "pop_65plus": 5706.0,
+            "jx": 0.9283185625877254,
+            "jy": 0.24014561877819307
+          },
+          {
+            "sa3_name": "Unley",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8917.0,
+            "jx": 0.42818414831731433,
+            "jy": 0.07586332810866392
+          },
+          {
+            "sa3_name": "Gawler - Two Wells",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7738.0,
+            "jx": 0.9666548190436696,
+            "jy": 0.12887972191064923
+          },
+          {
+            "sa3_name": "Playford",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14231.0,
+            "jx": 0.9636199770892528,
+            "jy": 0.12804583895777244
+          },
+          {
+            "sa3_name": "Port Adelaide - East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11308.0,
+            "jx": 0.8530094554673601,
+            "jy": 0.15190269351229435
+          },
+          {
+            "sa3_name": "Salisbury",
+            "coverage": "Both home & residential",
+            "pop_65plus": 23395.0,
+            "jx": 0.2944488920695857,
+            "jy": 0.13882717264941014
+          },
+          {
+            "sa3_name": "Tea Tree Gully",
+            "coverage": "Both home & residential",
+            "pop_65plus": 20826.0,
+            "jx": 0.38509772860192526,
+            "jy": 0.6408747448032146
+          },
+          {
+            "sa3_name": "Holdfast Bay",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10410.0,
+            "jx": 0.8511366715168569,
+            "jy": 0.18188008439914483
+          },
+          {
+            "sa3_name": "Marion",
+            "coverage": "Both home & residential",
+            "pop_65plus": 19166.0,
+            "jx": 0.31692200515627766,
+            "jy": 0.3456672833238632
+          },
+          {
+            "sa3_name": "Mitcham",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14334.0,
+            "jx": 0.1694927466860925,
+            "jy": 0.8967884099060118
+          },
+          {
+            "sa3_name": "Onkaparinga",
+            "coverage": "Both home & residential",
+            "pop_65plus": 37608.0,
+            "jx": 0.5568012624583502,
+            "jy": 0.47396164026287235
+          },
+          {
+            "sa3_name": "Charles Sturt",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24761.0,
+            "jx": 0.936154774160781,
+            "jy": 0.6675577385210272
+          },
+          {
+            "sa3_name": "Port Adelaide - West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12024.0,
+            "jx": 0.696029796674973,
+            "jy": 0.17231987120162984
+          },
+          {
+            "sa3_name": "West Torrens",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12071.0,
+            "jx": 0.570061170089365,
+            "jy": 0.19228901880867078
+          },
+          {
+            "sa3_name": "Barossa",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8916.0,
+            "jx": 0.09717649377076854,
+            "jy": 0.04086861626647886
+          },
+          {
+            "sa3_name": "Lower North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6302.0,
+            "jx": 0.6150072266991697,
+            "jy": 0.16893506307216455
+          },
+          {
+            "sa3_name": "Mid North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7271.0,
+            "jx": 0.9900538501042633,
+            "jy": 0.2785903390319586
+          },
+          {
+            "sa3_name": "Yorke Peninsula",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10029.0,
+            "jx": 0.14008401523652403,
+            "jy": 0.17701048427674682
+          },
+          {
+            "sa3_name": "Eyre Peninsula and South West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12856.0,
+            "jx": 0.5183296523637367,
+            "jy": 0.08870253375705561
+          },
+          {
+            "sa3_name": "Outback - North and East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4201.0,
+            "jx": 0.8773730719279554,
+            "jy": 0.12063587110060081
+          },
+          {
+            "sa3_name": "Fleurieu - Kangaroo Island",
+            "coverage": "Both home & residential",
+            "pop_65plus": 21464.0,
+            "jx": 0.7407686177542044,
+            "jy": 0.46077876803272577
+          },
+          {
+            "sa3_name": "Limestone Coast",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15805.0,
+            "jx": 0.697015740995268,
+            "jy": 0.2063337184057925
+          },
+          {
+            "sa3_name": "Murray and Mallee",
+            "coverage": "Both home & residential",
+            "pop_65plus": 19118.0,
+            "jx": 0.7024840839871093,
+            "jy": 0.36426986104807546
+          },
+          {
+            "sa3_name": "Augusta - Margaret River - Busselton",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14577.0,
+            "jx": 0.35949115121975517,
+            "jy": 0.5034172708548569
+          },
+          {
+            "sa3_name": "Bunbury",
+            "coverage": "Both home & residential",
+            "pop_65plus": 23037.0,
+            "jx": 0.29359184426449336,
+            "jy": 0.6903948286293653
+          },
+          {
+            "sa3_name": "Manjimup",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6641.0,
+            "jx": 0.8093611554785136,
+            "jy": 0.039312139841098936
+          },
+          {
+            "sa3_name": "Mandurah",
+            "coverage": "Both home & residential",
+            "pop_65plus": 31253.0,
+            "jx": 0.8101133946791808,
+            "jy": 0.7994103989090426
+          },
+          {
+            "sa3_name": "Cottesloe - Claremont",
+            "coverage": "Both home & residential",
+            "pop_65plus": 16064.0,
+            "jx": 0.8670723185801037,
+            "jy": 0.6279003894909078
+          },
+          {
+            "sa3_name": "Perth City",
+            "coverage": "Both home & residential",
+            "pop_65plus": 17257.0,
+            "jx": 0.9132405525564713,
+            "jy": 0.08175903194887191
+          },
+          {
+            "sa3_name": "Bayswater - Bassendean",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15684.0,
+            "jx": 0.5113423988609378,
+            "jy": 0.8735786241067772
+          },
+          {
+            "sa3_name": "Mundaring",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9643.0,
+            "jx": 0.5015162946871996,
+            "jy": 0.9208724005318132
+          },
+          {
+            "sa3_name": "Swan",
+            "coverage": "Both home & residential",
+            "pop_65plus": 20121.0,
+            "jx": 0.7982951789667752,
+            "jy": 0.06107795985486375
+          },
+          {
+            "sa3_name": "Joondalup",
+            "coverage": "Both home & residential",
+            "pop_65plus": 32519.0,
+            "jx": 0.6499639307777652,
+            "jy": 0.2768776481472037
+          },
+          {
+            "sa3_name": "Stirling",
+            "coverage": "Both home & residential",
+            "pop_65plus": 39088.0,
+            "jx": 0.7019668772577033,
+            "jy": 0.8062012797930613
+          },
+          {
+            "sa3_name": "Wanneroo",
+            "coverage": "Both home & residential",
+            "pop_65plus": 29280.0,
+            "jx": 0.795792669436101,
+            "jy": 0.7482596903836584
+          },
+          {
+            "sa3_name": "Armadale",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12982.0,
+            "jx": 0.8900053418175663,
+            "jy": 0.18452101935637732
+          },
+          {
+            "sa3_name": "Belmont - Victoria Park",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11087.0,
+            "jx": 0.3379951568515358,
+            "jy": 0.2093493233367103
+          },
+          {
+            "sa3_name": "Canning",
+            "coverage": "Both home & residential",
+            "pop_65plus": 16274.0,
+            "jx": 0.375582952639944,
+            "jy": 0.370472102791382
+          },
+          {
+            "sa3_name": "Gosnells",
+            "coverage": "Both home & residential",
+            "pop_65plus": 19206.0,
+            "jx": 0.093981939840869,
+            "jy": 0.4845229851910213
+          },
+          {
+            "sa3_name": "Kalamunda",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12192.0,
+            "jx": 0.578280140996174,
+            "jy": 0.618254771530296
+          },
+          {
+            "sa3_name": "Serpentine - Jarrahdale",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3994.0,
+            "jx": 0.035942273796742086,
+            "jy": 0.3689136395697724
+          },
+          {
+            "sa3_name": "South Perth",
+            "coverage": "Both home & residential",
+            "pop_65plus": 9033.0,
+            "jx": 0.46559801813246016,
+            "jy": 0.4625347161331479
+          },
+          {
+            "sa3_name": "Cockburn",
+            "coverage": "Both home & residential",
+            "pop_65plus": 17992.0,
+            "jx": 0.5426446347075766,
+            "jy": 0.7474709381337565
+          },
+          {
+            "sa3_name": "Fremantle",
+            "coverage": "Both home & residential",
+            "pop_65plus": 8655.0,
+            "jx": 0.2865412521282844,
+            "jy": 0.0366832028905979
+          },
+          {
+            "sa3_name": "Kwinana",
+            "coverage": "Both home & residential",
+            "pop_65plus": 5185.0,
+            "jx": 0.5908332605690108,
+            "jy": 0.25243694434402075
+          },
+          {
+            "sa3_name": "Melville",
+            "coverage": "Both home & residential",
+            "pop_65plus": 24258.0,
+            "jx": 0.03050024993904943,
+            "jy": 0.7133495858845524
+          },
+          {
+            "sa3_name": "Rockingham",
+            "coverage": "Both home & residential",
+            "pop_65plus": 21983.0,
+            "jx": 0.03734818874921442,
+            "jy": 0.8952068376871993
+          },
+          {
+            "sa3_name": "Albany",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15746.0,
+            "jx": 0.8226005606596583,
+            "jy": 0.5116774421156661
+          },
+          {
+            "sa3_name": "Wheat Belt - North",
+            "coverage": "Both home & residential",
+            "pop_65plus": 14662.0,
+            "jx": 0.3601906414112629,
+            "jy": 0.5321134852653157
+          },
+          {
+            "sa3_name": "Wheat Belt - South",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4787.0,
+            "jx": 0.12706051265188478,
+            "jy": 0.10717201133977605
+          },
+          {
+            "sa3_name": "Kimberley",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3248.0,
+            "jx": 0.5222432600548044,
+            "jy": 0.44741236682345464
+          },
+          {
+            "sa3_name": "East Pilbara",
+            "coverage": "Both home & residential",
+            "pop_65plus": 1176.0,
+            "jx": 0.7699935530986108,
+            "jy": 0.5326172664550232
+          },
+          {
+            "sa3_name": "West Pilbara",
+            "coverage": "Both home & residential",
+            "pop_65plus": 1206.0,
+            "jx": 0.21582102749684318,
+            "jy": 0.24247050363472966
+          },
+          {
+            "sa3_name": "Esperance",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3418.0,
+            "jx": 0.6228904758190003,
+            "jy": 0.26924323094938096
+          },
+          {
+            "sa3_name": "Gascoyne",
+            "coverage": "Home care only",
+            "pop_65plus": 1657.0,
+            "jx": 0.085347464993768,
+            "jy": 0.37728416310462265
+          },
+          {
+            "sa3_name": "Goldfields",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4120.0,
+            "jx": 0.0516817211686077,
+            "jy": 0.02007119777772637
+          },
+          {
+            "sa3_name": "Mid West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11940.0,
+            "jx": 0.531354631568148,
+            "jy": 0.3220791655831783
+          },
+          {
+            "sa3_name": "Brighton",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3157.0,
+            "jx": 0.5406351216101065,
+            "jy": 0.21144800699654465
+          },
+          {
+            "sa3_name": "Hobart - North East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 13082.0,
+            "jx": 0.6374299014982066,
+            "jy": 0.32749735217791465
+          },
+          {
+            "sa3_name": "Hobart - North West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10661.0,
+            "jx": 0.7260913337226615,
+            "jy": 0.11976213181925122
+          },
+          {
+            "sa3_name": "Hobart - South and West",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7779.0,
+            "jx": 0.9758520794625346,
+            "jy": 0.890527280739895
+          },
+          {
+            "sa3_name": "Hobart Inner",
+            "coverage": "Both home & residential",
+            "pop_65plus": 10407.0,
+            "jx": 0.5163003483011953,
+            "jy": 0.5935924535540487
+          },
+          {
+            "sa3_name": "Sorell - Dodges Ferry",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4290.0,
+            "jx": 0.32295647294124596,
+            "jy": 0.6791023191444896
+          },
+          {
+            "sa3_name": "Launceston",
+            "coverage": "Both home & residential",
+            "pop_65plus": 17756.0,
+            "jx": 0.7951861947687037,
+            "jy": 0.7891712386073383
+          },
+          {
+            "sa3_name": "Meander Valley - West Tamar",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6879.0,
+            "jx": 0.2708322512620742,
+            "jy": 0.4984421989290573
+          },
+          {
+            "sa3_name": "North East",
+            "coverage": "Both home & residential",
+            "pop_65plus": 11195.0,
+            "jx": 0.4389714207056361,
+            "jy": 0.08692028808742369
+          },
+          {
+            "sa3_name": "Central Highlands (Tas.)",
+            "coverage": "Both home & residential",
+            "pop_65plus": 2829.0,
+            "jx": 0.07845638134226596,
+            "jy": 0.5371065418185478
+          },
+          {
+            "sa3_name": "Huon - Bruny Island",
+            "coverage": "Both home & residential",
+            "pop_65plus": 5814.0,
+            "jx": 0.02535074341545751,
+            "jy": 0.5868411180208791
+          },
+          {
+            "sa3_name": "South East Coast",
+            "coverage": "Both home & residential",
+            "pop_65plus": 2897.0,
+            "jx": 0.9626484146779251,
+            "jy": 0.74543947418433
+          },
+          {
+            "sa3_name": "Burnie - Ulverstone",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12356.0,
+            "jx": 0.8359801205122058,
+            "jy": 0.4316595462296794
+          },
+          {
+            "sa3_name": "Devonport",
+            "coverage": "Both home & residential",
+            "pop_65plus": 12512.0,
+            "jx": 0.695974206093698,
+            "jy": 0.12758030279556376
+          },
+          {
+            "sa3_name": "West Coast",
+            "coverage": "Both home & residential",
+            "pop_65plus": 4061.0,
+            "jx": 0.4089529444142699,
+            "jy": 0.28377590579872447
+          },
+          {
+            "sa3_name": "Darwin City",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3122.0,
+            "jx": 0.17329432007084578,
+            "jy": 0.3630822963986351
+          },
+          {
+            "sa3_name": "Darwin Suburbs",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7102.0,
+            "jx": 0.15643704267108605,
+            "jy": 0.6459172413316012
+          },
+          {
+            "sa3_name": "Litchfield",
+            "coverage": "Home care only",
+            "pop_65plus": 3125.0,
+            "jx": 0.25024289816459533,
+            "jy": 0.5707783046689119
+          },
+          {
+            "sa3_name": "Palmerston",
+            "coverage": "Both home & residential",
+            "pop_65plus": 2863.0,
+            "jx": 0.5492266647061205,
+            "jy": 0.35609672589784624
+          },
+          {
+            "sa3_name": "Alice Springs",
+            "coverage": "Both home & residential",
+            "pop_65plus": 3701.0,
+            "jx": 0.7145959227000623,
+            "jy": 0.9865152487929797
+          },
+          {
+            "sa3_name": "Barkly",
+            "coverage": "Home care only",
+            "pop_65plus": 491.0,
+            "jx": 0.6601973767177313,
+            "jy": 0.6057748193568872
+          },
+          {
+            "sa3_name": "Daly - Tiwi - West Arnhem",
+            "coverage": "Home care only",
+            "pop_65plus": 1695.0,
+            "jx": 0.27993389694594284,
+            "jy": 0.23722679173599448
+          },
+          {
+            "sa3_name": "East Arnhem",
+            "coverage": "Home care only",
+            "pop_65plus": 682.0,
+            "jx": 0.9548652806631941,
+            "jy": 0.10178247262040374
+          },
+          {
+            "sa3_name": "Katherine",
+            "coverage": "Both home & residential",
+            "pop_65plus": 1732.0,
+            "jx": 0.7378969166957685,
+            "jy": 0.15285913918433203
+          },
+          {
+            "sa3_name": "Belconnen",
+            "coverage": "Both home & residential",
+            "pop_65plus": 16398.0,
+            "jx": 0.5543540525114007,
+            "jy": 0.24595772838450813
+          },
+          {
+            "sa3_name": "Canberra East",
+            "coverage": "Home care only",
+            "pop_65plus": 303.0,
+            "jx": 0.6117207462343522,
+            "jy": 0.16068137325955567
+          },
+          {
+            "sa3_name": "Gungahlin",
+            "coverage": "Home care only",
+            "pop_65plus": 7286.0,
+            "jx": 0.4196000624277899,
+            "jy": 0.18656702405130576
+          },
+          {
+            "sa3_name": "North Canberra",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7336.0,
+            "jx": 0.24773098950115746,
+            "jy": 0.2850951686938471
+          },
+          {
+            "sa3_name": "South Canberra",
+            "coverage": "Both home & residential",
+            "pop_65plus": 6330.0,
+            "jx": 0.3559726786512616,
+            "jy": 0.17337359529475482
+          },
+          {
+            "sa3_name": "Tuggeranong",
+            "coverage": "Both home & residential",
+            "pop_65plus": 15380.0,
+            "jx": 0.7578461104643691,
+            "jy": 0.8967654246264252
+          },
+          {
+            "sa3_name": "Weston Creek",
+            "coverage": "Both home & residential",
+            "pop_65plus": 5049.0,
+            "jx": 0.014393488629755868,
+            "jy": 0.08023374566164221
+          },
+          {
+            "sa3_name": "Woden Valley",
+            "coverage": "Both home & residential",
+            "pop_65plus": 7123.0,
+            "jx": 0.11607264050691624,
+            "jy": 0.5245113895702547
+          },
+          {
+            "sa3_name": "Molonglo",
+            "coverage": "Home care only",
+            "pop_65plus": 628.0,
+            "jx": 0.04600264202175275,
+            "jy": 0.4103968269896615
+          },
+          {
+            "sa3_name": "Uriarra - Namadgi",
+            "coverage": "Home care only",
+            "pop_65plus": 63.0,
+            "jx": 0.040728802318970136,
+            "jy": 0.9823786169086064
+          },
+          {
+            "sa3_name": "Christmas Island",
+            "coverage": "Neither",
+            "pop_65plus": 263.0,
+            "jx": 0.8554605840110072,
+            "jy": 0.11203890216805235
+          },
+          {
+            "sa3_name": "Cocos (Keeling) Islands",
+            "coverage": "Neither",
+            "pop_65plus": 128.0,
+            "jx": 0.7036578593800237,
+            "jy": 0.39785559904574164
+          },
+          {
+            "sa3_name": "Jervis Bay",
+            "coverage": "Home care only",
+            "pop_65plus": 53.0,
+            "jx": 0.4741738290873252,
+            "jy": 0.9694704332753689
+          },
+          {
+            "sa3_name": "Norfolk Island",
+            "coverage": "Home care only",
+            "pop_65plus": 660.0,
+            "jx": 0.09783416065100148,
+            "jy": 0.8655071258939803
+          }
+        ]
+      },
+      "mark": {
+        "type": "circle",
+        "size": 32,
+        "opacity": 0.75,
+        "stroke": "white",
+        "strokeWidth": 0.3
+      },
+      "encoding": {
+        "y": {
+          "field": "coverage",
+          "type": "nominal",
+          "title": null,
+          "sort": [
+            "Both home & residential",
+            "Home care only",
+            "Neither"
+          ],
+          "scale": {
+            "paddingInner": 0.2,
+            "paddingOuter": 0.15
+          },
+          "axis": {
+            "labelFontSize": 12,
+            "labelLimit": 200,
+            "labelExpr": "datum.label=='Both home & residential' ? ['Both home','& residential','323 areas'] : datum.label=='Home care only' ? ['Home care','only','13 areas'] : ['Neither','','4 areas']"
+          }
+        },
+        "yOffset": {
+          "field": "jy",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              1
+            ],
+            "range": [
+              -38,
+              38
+            ]
+          }
+        },
+        "x": {
+          "field": "jx",
+          "type": "quantitative",
+          "axis": null,
+          "scale": {
+            "domain": [
+              0,
+              1
+            ]
+          }
+        },
+        "color": {
+          "field": "coverage",
+          "type": "nominal",
+          "legend": null,
+          "scale": {
+            "domain": [
+              "Both home & residential",
+              "Home care only",
+              "Neither"
+            ],
+            "range": [
+              "#8537d9",
+              "#d3b8f7",
+              "#bbbbbb"
+            ]
+          }
+        },
+        "tooltip": [
+          {
+            "field": "sa3_name",
+            "type": "nominal",
+            "title": "Area"
+          },
+          {
+            "field": "coverage",
+            "type": "nominal",
+            "title": "Coverage"
+          },
+          {
+            "field": "pop_65plus",
+            "type": "quantitative",
+            "title": "Population 65+",
+            "format": ","
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "font": "Helvetica, Arial, sans-serif"
+  }
+}

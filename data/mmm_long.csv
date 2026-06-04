@@ -1,0 +1,15 @@
+mmm,mmm_label,care_type,share_pct
+1,Metropolitan areas,Home support,78.3
+1,Metropolitan areas,Residential,21.7
+2,Regional centres,Home support,83.64
+2,Regional centres,Residential,16.36
+3,Large rural towns,Home support,80.42
+3,Large rural towns,Residential,19.58
+4,Medium rural towns,Home support,81.05
+4,Medium rural towns,Residential,18.95
+5,Small rural towns,Home support,88.43
+5,Small rural towns,Residential,11.57
+6,Remote communities,Home support,92.01
+6,Remote communities,Residential,7.99
+7,Very remote communities,Home support,96.07
+7,Very remote communities,Residential,3.93
